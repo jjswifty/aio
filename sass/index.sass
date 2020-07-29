@@ -1,11 +1,9 @@
 @import '_base.sass'
-.section-intro   
-    
+.section-intro       
     background: url(../img/circle.png), url(../img/fon.png)
     background-position: top right, center
-    background-size: 730px, cover
-    background-repeat: no-repeat
-        
+    background-size: 37%, cover
+    background-repeat: no-repeat        
     height: 100vh    
     .wrapper
         width: 100%        
@@ -52,6 +50,47 @@
                     .arrow
                         width: 80px
                         margin: 0 auto
+.video-svg_block
+    background: linear-gradient(90deg, rgba(43,234,255,1) 10%, rgba(255,18,227,1) 100%)
+
+    height: 120px
+    width: 100%
+    .svg-video
+        height: 120px
+
+
+.section-video
+    background: linear-gradient(90deg, rgba(255,18,227,1) 0%, rgba(25,14,48,1) 10%, rgba(25,14,48,1) 90%, rgba(43,234,255,1) 100%)
+    
+    .wrapper          
+        .video_block
+            width: 100%
+            display: flex
+            flex-direction: column                     
+            .video
+                height: 600px
+                border: 1px solid white
+                margin: 50px 0 100px 0                
+            .content_block
+                display: flex
+                flex-direction: column
+                align-items: center
+                margin-bottom: 30px                
+                .video_svg-content
+                    height: 80px
+                    margin-bottom: 30px                    
+                .video_title-content
+                    background: linear-gradient(90deg, rgba(43,234,255,1) 35%, rgba(255,18,227,1) 100%)
+                    -webkit-background-clip: text
+                    -webkit-text-fill-color: transparent
+                    font: 
+                        size: 30px
+                .video_description-content
+                    max-width: 700px
+                    text-align: center
+                    color: #ffffff
+                    font: 
+                        size: 26px
                         
                         
 
