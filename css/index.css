@@ -61,7 +61,10 @@ table {
 }
 
 .section-intro {
-  background: url(../img/fon.png);
+  background: url(../img/circle.png), url(../img/fon.png);
+  background-position: top right, center;
+  background-size: 730px, cover;
+  background-repeat: no-repeat;
   height: 100vh;
 }
 
@@ -87,6 +90,7 @@ table {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin-top: 200px;
 }
 
 .section-intro .wrapper .intro .description .title-content {
@@ -102,15 +106,34 @@ table {
 
 .section-intro .wrapper .intro .description .title-content .intro-title {
   color: #ffffff;
-  font-size: 60px;
-  margin-bottom: 50px;
+  font-size: 80px;
+  margin-bottom: 75px;
   letter-spacing: inherit;
+  text-align: right;
+  font-weight: 800;
 }
 
-.section-intro .wrapper .intro .description .intro-button {
+.section-intro .wrapper .intro .description .title-content .intro_title-gradient {
+  background: -webkit-gradient(linear, left top, right top, color-stop(35%, #2beaff), to(#ff12e3));
+  background: linear-gradient(90deg, #2beaff 35%, #ff12e3 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.section-intro .wrapper .intro .description .button-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.section-intro .wrapper .intro .description .button-block .intro-button {
   color: #ffffff;
-  background: -webkit-gradient(linear, left top, right top, color-stop(35%, #ff12e3), to(#2beaff));
-  background: linear-gradient(90deg, #ff12e3 35%, #2beaff 100%);
+  background: -webkit-gradient(linear, left top, right top, color-stop(35%, #2beaff), to(#ff12e3));
+  background: linear-gradient(90deg, #2beaff 35%, #ff12e3 100%);
   font-size: 50px;
   font-weight: bold;
   border: none;
@@ -119,5 +142,11 @@ table {
   width: 400px;
   border-radius: 20px;
   cursor: pointer;
+  margin-bottom: 40px;
+}
+
+.section-intro .wrapper .intro .description .button-block .arrow {
+  width: 80px;
+  margin: 0 auto;
 }
 /*# sourceMappingURL=index.css.map */
