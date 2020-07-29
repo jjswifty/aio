@@ -59,4 +59,65 @@ table {
   padding: 0 10px;
   overflow: hidden;
 }
+
+.section-intro {
+  background: url(../img/fon.png);
+  height: 100vh;
+}
+
+.section-intro .wrapper {
+  width: 100%;
+}
+
+.section-intro .wrapper .intro {
+  width: 100%;
+}
+
+.section-intro .wrapper .intro .description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.section-intro .wrapper .intro .description .title-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-family: 'Russo One', sans-serif;
+}
+
+.section-intro .wrapper .intro .description .title-content .intro-title {
+  color: #ffffff;
+  font-size: 60px;
+  margin-bottom: 50px;
+  letter-spacing: inherit;
+}
+
+.section-intro .wrapper .intro .description .intro-button {
+  color: #ffffff;
+  background: -webkit-gradient(linear, left top, right top, color-stop(35%, #ff12e3), to(#2beaff));
+  background: linear-gradient(90deg, #ff12e3 35%, #2beaff 100%);
+  font-size: 50px;
+  font-weight: bold;
+  border: none;
+  outline: none;
+  padding: 10px 0;
+  width: 400px;
+  border-radius: 20px;
+  cursor: pointer;
+}
 /*# sourceMappingURL=index.css.map */
