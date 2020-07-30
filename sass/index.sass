@@ -2,7 +2,7 @@
 //font-family: 'Russo One', sans-serif
 .gradient
     background: linear-gradient(90deg, rgba(43,234,255,1) 10%, rgba(255,18,227,1) 60%)
-.section-intro       
+.section-intro
     background: url(../img/circle.png), url(../img/fon.png)
     background-position: top right, center
     background-size: 37%, cover
@@ -97,7 +97,7 @@
                     color: #ffffff
                     font: 
                         size: 26px
-.section-about    
+.section-about
     width: 100%    
     .black-div        
         background-color: rgba( 0, 0, 0, 0.35)        
@@ -112,6 +112,70 @@
                 size: 34px   
             max-width: 700px
             margin: 40px 0
+.section-about-apps
+    background-color: #190e30
+    font-family: 'Russo One', sans-serif
+    padding: 50px 0 //нужно убрать, сделано для отделения блока
+    
+    .wrapper
+        display: flex
+        flex-direction: column
+        max-width: 70%
+        .apps_description-block
+            border-radius: 20px
+            border: none            
+            margin: 0 auto
+            width: 100%                
+            .black-div
+                background-color: rgba( 0, 0, 0, 0.35)
+                border-radius: 20px
+                display: flex
+                flex-direction: column
+                align-items: center
+                padding: 10px 0
+                span
+                    padding: 3px 0
+                    color: white
+                    font:
+                        size: 32px
+                
+        .apps_main-block
+            display: flex
+            justify-content: space-between
+            max-width: 100%
+            margin-top: 70px
+            .apps_applications
+                display: flex
+                flex-direction: column
+                .application_text
+                    color: white
+                    font: 
+                        size: 65px
+                        weight: 800
+                    line-height: 80px
+                    margin-bottom: 30px
+                .apps_button
+                    color: white
+                    border: none
+                    outline: none
+                    font: 
+                        size: 30px
+                    border-radius: 20px
+                    padding: 25px 0
+
+                    max-width: 400px
+            .apps_users
+                display: flex
+                flex-direction: column                                      
+                .icons-block_text
+                    max-width: 400px
+                    color: white
+                    font: 
+                        size: 40px
+                    line-height: 40px
+
+
+
 footer
     background: linear-gradient(90deg, rgba(43,234,255,1) 10%, rgba(255,18,227,1) 100%)
     .wrapper        

@@ -259,6 +259,108 @@ table {
   margin: 40px 0;
 }
 
+.section-about-apps {
+  background-color: #190e30;
+  font-family: 'Russo One', sans-serif;
+  padding: 50px 0;
+}
+
+.section-about-apps .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-width: 70%;
+}
+
+.section-about-apps .wrapper .apps_description-block {
+  border-radius: 20px;
+  border: none;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.section-about-apps .wrapper .apps_description-block .black-div {
+  background-color: rgba(0, 0, 0, 0.35);
+  border-radius: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px 0;
+}
+
+.section-about-apps .wrapper .apps_description-block .black-div span {
+  padding: 3px 0;
+  color: white;
+  font-size: 32px;
+}
+
+.section-about-apps .wrapper .apps_main-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 100%;
+  margin-top: 70px;
+}
+
+.section-about-apps .wrapper .apps_main-block .apps_applications {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.section-about-apps .wrapper .apps_main-block .apps_applications .application_text {
+  color: white;
+  font-size: 65px;
+  font-weight: 800;
+  line-height: 80px;
+  margin-bottom: 30px;
+}
+
+.section-about-apps .wrapper .apps_main-block .apps_applications .apps_button {
+  color: white;
+  border: none;
+  outline: none;
+  font-size: 30px;
+  border-radius: 20px;
+  padding: 25px 0;
+  max-width: 400px;
+}
+
+.section-about-apps .wrapper .apps_main-block .apps_users {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.section-about-apps .wrapper .apps_main-block .apps_users .icons-block_text {
+  max-width: 400px;
+  color: white;
+  font-size: 40px;
+  line-height: 40px;
+}
+
 footer {
   background: -webkit-gradient(linear, left top, right top, color-stop(10%, #2beaff), to(#ff12e3));
   background: linear-gradient(90deg, #2beaff 10%, #ff12e3 100%);
