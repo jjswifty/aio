@@ -1,10 +1,13 @@
 @import '_base.sass'
+//font-family: 'Russo One', sans-serif
+.gradient
+    background: linear-gradient(90deg, rgba(43,234,255,1) 10%, rgba(255,18,227,1) 60%)
 .section-intro       
     background: url(../img/circle.png), url(../img/fon.png)
     background-position: top right, center
     background-size: 37%, cover
     background-repeat: no-repeat        
-    height: 100vh    
+    height: 1080px  
     .wrapper
         width: 100%        
         .intro
@@ -14,8 +17,7 @@
                 flex-direction: column                
                 align-items: flex-end
                 justify-content: center
-                margin-top: 200px
-                
+                margin-top: 230px                
                 .title-content
                     display: flex
                     flex-direction: column
@@ -52,16 +54,18 @@
                         margin: 0 auto
 .video-svg_block
     background: linear-gradient(90deg, rgba(43,234,255,1) 10%, rgba(255,18,227,1) 100%)
-
+    
     height: 120px
     width: 100%
-    .svg-video
+    .black-div
         height: 120px
-
-
+        background-color: rgba( 0, 0, 0, 0.5)        
+        display: flex
+        justify-content: center
+        .svg-video
+            height: 120px
 .section-video
-    background: linear-gradient(90deg, rgba(255,18,227,1) 0%, rgba(25,14,48,1) 10%, rgba(25,14,48,1) 90%, rgba(43,234,255,1) 100%)
-    
+    background: linear-gradient(90deg, rgba(255,18,227,1) 0%, rgba(25,14,48,1) 10%, rgba(25,14,48,1) 90%, rgba(43,234,255,1) 100%)    
     .wrapper          
         .video_block
             width: 100%
@@ -75,7 +79,8 @@
                 display: flex
                 flex-direction: column
                 align-items: center
-                margin-bottom: 30px                
+                margin-bottom: 30px
+                font-family: 'Russo One', sans-serif             
                 .video_svg-content
                     height: 80px
                     margin-bottom: 30px                    
@@ -85,13 +90,51 @@
                     -webkit-text-fill-color: transparent
                     font: 
                         size: 30px
+                    padding-bottom: 10px
                 .video_description-content
                     max-width: 700px
                     text-align: center
                     color: #ffffff
                     font: 
                         size: 26px
-                        
+.section-about    
+    width: 100%    
+    .black-div        
+        background-color: rgba( 0, 0, 0, 0.35)        
+        display: flex
+        justify-content: center
+        .about_text
+            font-family: 'Russo One', sans-serif
+            color: white
+            text-align: center
+            opacity: 8
+            font:
+                size: 34px   
+            max-width: 700px
+            margin: 40px 0
+footer
+    background: linear-gradient(90deg, rgba(43,234,255,1) 10%, rgba(255,18,227,1) 100%)
+    .wrapper        
+        .footer-cards
+            display: flex
+            margin: 0 auto                       
+            .card
+                display: flex
+                flex-direction: column
+                align-items: center
+                padding: 40px 70px                
+                img
+                    width: 200px
+                    padding-bottom: 20px                  
+                span
+                    font:
+                        size: 32px
+                        family: 'Russo One', sans-serif
+                        weight: bold
+                    color: white
+            
+                
+
                         
 
                         

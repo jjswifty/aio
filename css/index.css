@@ -60,12 +60,17 @@ table {
   overflow: hidden;
 }
 
+.gradient {
+  background: -webkit-gradient(linear, left top, right top, color-stop(10%, #2beaff), color-stop(60%, #ff12e3));
+  background: linear-gradient(90deg, #2beaff 10%, #ff12e3 60%);
+}
+
 .section-intro {
   background: url(../img/circle.png), url(../img/fon.png);
   background-position: top right, center;
   background-size: 37%, cover;
   background-repeat: no-repeat;
-  height: 100vh;
+  height: 1080px;
 }
 
 .section-intro .wrapper {
@@ -90,7 +95,7 @@ table {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-top: 200px;
+  margin-top: 230px;
 }
 
 .section-intro .wrapper .intro .description .title-content {
@@ -157,7 +162,18 @@ table {
   width: 100%;
 }
 
-.video-svg_block .svg-video {
+.video-svg_block .black-div {
+  height: 120px;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.video-svg_block .black-div .svg-video {
   height: 120px;
 }
 
@@ -195,6 +211,7 @@ table {
       -ms-flex-align: center;
           align-items: center;
   margin-bottom: 30px;
+  font-family: 'Russo One', sans-serif;
 }
 
 .section-video .wrapper .video_block .content_block .video_svg-content {
@@ -208,6 +225,7 @@ table {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-size: 30px;
+  padding-bottom: 10px;
 }
 
 .section-video .wrapper .video_block .content_block .video_description-content {
@@ -215,5 +233,67 @@ table {
   text-align: center;
   color: #ffffff;
   font-size: 26px;
+}
+
+.section-about {
+  width: 100%;
+}
+
+.section-about .black-div {
+  background-color: rgba(0, 0, 0, 0.35);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.section-about .black-div .about_text {
+  font-family: 'Russo One', sans-serif;
+  color: white;
+  text-align: center;
+  opacity: 8;
+  font-size: 34px;
+  max-width: 700px;
+  margin: 40px 0;
+}
+
+footer {
+  background: -webkit-gradient(linear, left top, right top, color-stop(10%, #2beaff), to(#ff12e3));
+  background: linear-gradient(90deg, #2beaff 10%, #ff12e3 100%);
+}
+
+footer .wrapper .footer-cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
+}
+
+footer .wrapper .footer-cards .card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 40px 70px;
+}
+
+footer .wrapper .footer-cards .card img {
+  width: 200px;
+  padding-bottom: 20px;
+}
+
+footer .wrapper .footer-cards .card span {
+  font-size: 32px;
+  font-family: 'Russo One', sans-serif;
+  font-weight: bold;
+  color: white;
 }
 /*# sourceMappingURL=index.css.map */
