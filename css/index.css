@@ -192,12 +192,17 @@ header .wrapper ul li a {
           box-shadow: 0.4em 0 0.6em 0.1em rgba(83, 228, 68, 0.65);
 }
 
+.gradient {
+  background: -webkit-gradient(linear, left top, right top, color-stop(10%, #2beaff), color-stop(60%, #ff12e3));
+  background: linear-gradient(90deg, #2beaff 10%, #ff12e3 60%);
+}
+
 .section-intro {
   background: url(../img/circle.png), url(../img/fon.png);
   background-position: top right, center;
   background-size: 37%, cover;
   background-repeat: no-repeat;
-  height: 100vh;
+  height: 1080px;
 }
 
 .section-intro .wrapper {
@@ -222,7 +227,7 @@ header .wrapper ul li a {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-top: 200px;
+  margin-top: 230px;
 }
 
 .section-intro .wrapper .intro .description .title-content {
@@ -289,7 +294,18 @@ header .wrapper ul li a {
   width: 100%;
 }
 
-.video-svg_block .svg-video {
+.video-svg_block .black-div {
+  height: 120px;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.video-svg_block .black-div .svg-video {
   height: 120px;
 }
 
@@ -307,6 +323,9 @@ header .wrapper ul li a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  color: white;
+  font-size: 80px;
+  font-family: sans-serif;
 }
 
 .section-video .wrapper .video_block .video {
@@ -327,6 +346,7 @@ header .wrapper ul li a {
       -ms-flex-align: center;
           align-items: center;
   margin-bottom: 30px;
+  font-family: 'Russo One', sans-serif;
 }
 
 .section-video .wrapper .video_block .content_block .video_svg-content {
@@ -340,23 +360,178 @@ header .wrapper ul li a {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-size: 30px;
+  padding-bottom: 10px;
 }
 
 .section-video .wrapper .video_block .content_block .video_description-content {
   max-width: 700px;
   text-align: center;
   color: #ffffff;
-  background: -webkit-gradient(linear, left top, right top, color-stop(35%, #ff12e3), to(#2beaff));
-  background: linear-gradient(90deg, #ff12e3 35%, #2beaff 100%);
-  font-size: 50px;
-  font-weight: bold;
+  font-size: 26px;
+}
+
+.section-about {
+  width: 100%;
+}
+
+.section-about .black-div {
+  background-color: rgba(0, 0, 0, 0.35);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.section-about .black-div .about_text {
+  font-family: 'Russo One', sans-serif;
+  color: white;
+  text-align: center;
+  opacity: 8;
+  font-size: 34px;
+  max-width: 700px;
+  margin: 40px 0;
+}
+
+.section-about-apps {
+  background-color: #190e30;
+  font-family: 'Russo One', sans-serif;
+  padding: 50px 0;
+}
+
+.section-about-apps .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-width: 70%;
+}
+
+.section-about-apps .wrapper .apps_description-block {
+  border-radius: 20px;
+  border: none;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.section-about-apps .wrapper .apps_description-block .black-div {
+  background-color: rgba(0, 0, 0, 0.35);
+  border-radius: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px 0;
+}
+
+.section-about-apps .wrapper .apps_description-block .black-div span {
+  padding: 3px 0;
+  color: white;
+  font-size: 32px;
+}
+
+.section-about-apps .wrapper .apps_main-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 100%;
+  margin-top: 70px;
+}
+
+.section-about-apps .wrapper .apps_main-block .apps_applications {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.section-about-apps .wrapper .apps_main-block .apps_applications .application_text {
+  color: white;
+  font-size: 65px;
+  font-weight: 800;
+  line-height: 80px;
+  margin-bottom: 30px;
+}
+
+.section-about-apps .wrapper .apps_main-block .apps_applications .apps_button {
+  color: white;
   border: none;
   outline: none;
-  padding: 10px 0;
-  width: 400px;
+  font-size: 30px;
   border-radius: 20px;
-  cursor: pointer;
-  font-size: 26px;
+  padding: 25px 0;
+  max-width: 400px;
+}
+
+.section-about-apps .wrapper .apps_main-block .apps_users {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.section-about-apps .wrapper .apps_main-block .apps_users .icons-block_text {
+  max-width: 400px;
+  color: white;
+  font-size: 40px;
+  line-height: 40px;
+}
+
+footer {
+  background: -webkit-gradient(linear, left top, right top, color-stop(10%, #2beaff), to(#ff12e3));
+  background: linear-gradient(90deg, #2beaff 10%, #ff12e3 100%);
+}
+
+footer .wrapper .footer-cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
+}
+
+footer .wrapper .footer-cards .card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 40px 70px;
+}
+
+footer .wrapper .footer-cards .card img {
+  width: 200px;
+  padding-bottom: 20px;
+}
+
+footer .wrapper .footer-cards .card span {
+  font-size: 32px;
+  font-family: 'Russo One', sans-serif;
+  font-weight: bold;
+  color: white;
 }
 
 .section-robot {
