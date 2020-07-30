@@ -200,14 +200,13 @@ button:hover {
 }
 
 .section-intro {
-  background: url(../img/circle.png), url(../img/fon.png);
-  background-position: top right, center;
-  background-size: 37%, cover;
+  background: url(../img/fon.png);
   background-repeat: no-repeat;
 }
 
 .section-intro .wrapper .intro {
   width: 100%;
+  height: 100%;
 }
 
 .section-intro .wrapper .intro .description {
@@ -255,7 +254,6 @@ button:hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding-bottom: 300px;
 }
 
 .section-intro .wrapper .intro .description .button-block .intro-button {
@@ -297,7 +295,11 @@ button:hover {
 }
 
 .section-video {
-  background: url(../img/fon-description.jpg);
+  background: url(../img/fon-description.png);
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
 }
 
 .section-video .wrapper .video_block {

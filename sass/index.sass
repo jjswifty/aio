@@ -18,17 +18,20 @@ button
 
 
 .section-intro
-    background: url(../img/circle.png), url(../img/fon.png)
-        position: top right, center
-        size: 37%, cover
-        repeat: no-repeat 
+    background: url(../img/fon.png)
+        //position: top right, left center
+        //size: 37%, cover
+        repeat: no-repeat
+    
+    
+        
     //@media screen and ( max-width: 900px )
     //    background-size: 37%, 100%       
     // НИКОГДА НЕ СТАВЬ ФИКСИРОВАННУЮ ВЫСОТУ БЛЯТЬ ! height: 1080px УБЬЮ НАХУЙ ! 
-    .wrapper
-               
+    .wrapper               
         .intro
-            width: 100%            
+            width: 100%
+            height: 100%        
             .description
                 display: flex
                 flex-direction: column                
@@ -49,7 +52,7 @@ button
                 .button-block
                     display: flex
                     flex-direction: column
-                    padding-bottom: 300px
+                    //padding-bottom: 300px
                     .intro-button
                         color: #ffffff
                         font: 
@@ -76,7 +79,12 @@ button
         .svg-video
             height: 120px
 .section-video
-    background: url(../img/fon-description.jpg)    
+    background: url(../img/fon-description.png)
+        size: 100%
+        position: center
+        repeat: no-repeat
+    width: 100%
+
     .wrapper          
         .video_block
             width: 100%
