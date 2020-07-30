@@ -127,6 +127,7 @@ section {
 
 .section-robot {
   background: #190E30;
+  overflow: hidden;
 }
 
 .section-robot .wrapper {
