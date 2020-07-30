@@ -1,8 +1,22 @@
 @import '_base.sass'
 @import '_header.sass'
-
+body
+    background-color: #190E30
+button
+    transition: all .3s
+    &:hover
+        transform: scale(1.05)
 .gradient
+    background: linear-gradient(90deg, rgba(43,234,255,1) 10%, rgb(255, 18, 227) 60%)
+.gradient-text
     background: linear-gradient(90deg, rgba(43,234,255,1) 10%, rgba(255,18,227,1) 60%)
+    -webkit-background-clip: text
+    -webkit-text-fill-color: transparent
+.black
+    background-color: rgba( 0, 0, 0, 0.4)
+
+
+
 .section-intro
     background: url(../img/circle.png), url(../img/fon.png)
         position: top right, center
@@ -31,18 +45,13 @@
                         margin-bottom: 75px
                         letter-spacing: inherit
                         text-align: right
-                        font-weight: 800
-                    .intro_title-gradient
-                        background: linear-gradient(90deg, rgba(43,234,255,1) 35%, rgba(255,18,227,1) 100%)
-                        -webkit-background-clip: text
-                        -webkit-text-fill-color: transparent
+                        font-weight: 800                    
                 .button-block
                     display: flex
                     flex-direction: column
                     padding-bottom: 300px
                     .intro-button
                         color: #ffffff
-                        background: linear-gradient(90deg, rgba(43,234,255,1) 35%, rgba(255,18,227,1) 100%)
                         font: 
                             size: 50px
                             weight: bold
@@ -56,21 +65,18 @@
                     .arrow
                         width: 80px
                         margin: 0 auto
-
 .video-svg_block
-    background: linear-gradient(90deg, rgba(43,234,255,1) 10%, rgba(255,18,227,1) 100%)
     height: 120px
     width: 100%
     .black-div
         height: 120px
-        background-color: rgba( 0, 0, 0, 0.5)        
+        background-color: rgba( 0, 0, 0, 0.4)        
         display: flex
         justify-content: center
         .svg-video
             height: 120px
-
 .section-video
-    background: linear-gradient(90deg, rgba(255,18,227,1) 0%, rgba(25,14,48,1) 10%, rgba(25,14,48,1) 90%, rgba(43,234,255,1) 100%)    
+    background: url(../img/fon-description.jpg)    
     .wrapper          
         .video_block
             width: 100%
@@ -92,12 +98,10 @@
                 .video_svg-content
                     height: 80px
                     margin-bottom: 30px                    
-                .video_title-content
-                    background: linear-gradient(90deg, rgba(43,234,255,1) 35%, rgba(255,18,227,1) 100%)
-                    -webkit-background-clip: text
-                    -webkit-text-fill-color: transparent
+                .video_title-content                    
                     font: 
                         size: 30px
+                        weight: 600
                     padding-bottom: 10px
                 .video_description-content
                     max-width: 700px
@@ -108,21 +112,20 @@
 .section-about
     width: 100%    
     .black-div        
-        background-color: rgba( 0, 0, 0, 0.35)        
+        background-color: rgba( 0, 0, 0, 0.4)        
         display: flex
         justify-content: center
         .about_text
-            font-family: 'Russo One', sans-serif
+            font-family: 'Montserrat', sans-serif
             color: white
-            text-align: center
-            opacity: 8
+            text-align: center            
             font:
-                size: 34px   
-            max-width: 700px
-            margin: 40px 0
+                size: 40px   
+            max-width: 800px
+            margin: 60px 0
 .section-about-apps
     background-color: #190e30
-    font-family: 'Russo One', sans-serif
+    font-family: 'Montserrat', sans-serif
     padding: 50px 0 //нужно убрать, сделано для отделения блока
     .wrapper
         display: flex
@@ -134,7 +137,7 @@
             margin: 0 auto
             width: 100%                
             .black-div
-                background-color: rgba( 0, 0, 0, 0.35)
+                background-color: rgba( 0, 0, 0, 0.4)
                 border-radius: 20px
                 display: flex
                 flex-direction: column
@@ -156,19 +159,21 @@
                 .application_text
                     color: white
                     font: 
-                        size: 65px
-                        weight: 800
-                    line-height: 80px
+                        size: 90px
+                        weight: 500
+                    line-height: 100px
                     margin-bottom: 30px
                 .apps_button
                     color: white
                     border: none
                     outline: none
                     font: 
-                        size: 30px
-                    border-radius: 20px
-                    padding: 25px 0
-                    max-width: 400px
+                        size: 35px
+                        weight: 600
+                    border-radius: 40px
+                    padding: 40px 0
+                    cursor: pointer
+                    max-width: 440px
             .apps_users
                 display: flex
                 flex-direction: column                                      
@@ -177,11 +182,25 @@
                     color: white
                     font: 
                         size: 40px
-                    line-height: 40px
-                    text-align: right
+                        weight: 800
+                    line-height: 50px
+                    text-align: left
 footer
-    background: linear-gradient(90deg, rgba(43,234,255,1) 10%, rgba(255,18,227,1) 100%)
-    .wrapper        
+    background: linear-gradient(90deg, rgba(43,234,255,1) 10%, rgba(255,18,227,1) 60%)
+    position: relative
+    border-radius: 3%
+    &::after
+        content: ''
+        position: absolute
+        width: 100%
+        height: 100%
+        background-color: rgba( 0, 0, 0, 0.4)
+        left: 0
+        top: 0
+        z-index: 0
+        border-radius: 3%     
+
+    .wrapper             
         .footer-cards
             display: flex
             justify-content: space-evenly
@@ -194,8 +213,10 @@ footer
                 display: flex
                 flex-direction: column
                 align-items: center
-                padding: 20px 0 
-                width: 20%              
+                padding: 40px 0
+                
+                width: 20%
+                z-index: 1            
                 img
                     @media screen and ( max-width: 1000px )
                         width: 100px
@@ -207,7 +228,13 @@ footer
                         family: 'Russo One', sans-serif
                         weight: bold
                     color: white
-                      
+                    padding-top: 15px
+    .container
+        width: 100%
+        height: 120px
+        background-color: #190E30
+        position: absolute
+        z-index: 5
 .section-robot
     background: #190E30
     overflow: hidden
@@ -269,7 +296,6 @@ footer
                     background: -webkit-linear-gradient(0deg, rgba(43,234,255,1) 35%, rgba(255,18,227,1) 100%)
                     -webkit-background-clip: text
                     -webkit-text-fill-color: transparent
-
 .section-apps-promo
     background: url(../img/woman.png),#190E30
         position: bottom right, center

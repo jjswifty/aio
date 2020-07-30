@@ -169,9 +169,34 @@ header .wrapper #nav-container .toggle-icon img {
   height: 50x;
 }
 
+body {
+  background-color: #190E30;
+}
+
+button {
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+button:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
 .gradient {
   background: -webkit-gradient(linear, left top, right top, color-stop(10%, #2beaff), color-stop(60%, #ff12e3));
   background: linear-gradient(90deg, #2beaff 10%, #ff12e3 60%);
+}
+
+.gradient-text {
+  background: -webkit-gradient(linear, left top, right top, color-stop(10%, #2beaff), color-stop(60%, #ff12e3));
+  background: linear-gradient(90deg, #2beaff 10%, #ff12e3 60%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.black {
+  background-color: rgba(0, 0, 0, 0.4);
 }
 
 .section-intro {
@@ -222,13 +247,6 @@ header .wrapper #nav-container .toggle-icon img {
   font-weight: 800;
 }
 
-.section-intro .wrapper .intro .description .title-content .intro_title-gradient {
-  background: -webkit-gradient(linear, left top, right top, color-stop(35%, #2beaff), to(#ff12e3));
-  background: linear-gradient(90deg, #2beaff 35%, #ff12e3 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
 .section-intro .wrapper .intro .description .button-block {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -242,8 +260,6 @@ header .wrapper #nav-container .toggle-icon img {
 
 .section-intro .wrapper .intro .description .button-block .intro-button {
   color: #ffffff;
-  background: -webkit-gradient(linear, left top, right top, color-stop(35%, #2beaff), to(#ff12e3));
-  background: linear-gradient(90deg, #2beaff 35%, #ff12e3 100%);
   font-size: 50px;
   font-weight: bold;
   border: none;
@@ -261,15 +277,13 @@ header .wrapper #nav-container .toggle-icon img {
 }
 
 .video-svg_block {
-  background: -webkit-gradient(linear, left top, right top, color-stop(10%, #2beaff), to(#ff12e3));
-  background: linear-gradient(90deg, #2beaff 10%, #ff12e3 100%);
   height: 120px;
   width: 100%;
 }
 
 .video-svg_block .black-div {
   height: 120px;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.4);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -283,8 +297,7 @@ header .wrapper #nav-container .toggle-icon img {
 }
 
 .section-video {
-  background: -webkit-gradient(linear, left top, right top, from(#ff12e3), color-stop(10%, #190e30), color-stop(90%, #190e30), to(#2beaff));
-  background: linear-gradient(90deg, #ff12e3 0%, #190e30 10%, #190e30 90%, #2beaff 100%);
+  background: url(../img/fon-description.jpg);
 }
 
 .section-video .wrapper .video_block {
@@ -328,11 +341,8 @@ header .wrapper #nav-container .toggle-icon img {
 }
 
 .section-video .wrapper .video_block .content_block .video_title-content {
-  background: -webkit-gradient(linear, left top, right top, color-stop(35%, #2beaff), to(#ff12e3));
-  background: linear-gradient(90deg, #2beaff 35%, #ff12e3 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
   font-size: 30px;
+  font-weight: 600;
   padding-bottom: 10px;
 }
 
@@ -348,7 +358,7 @@ header .wrapper #nav-container .toggle-icon img {
 }
 
 .section-about .black-div {
-  background-color: rgba(0, 0, 0, 0.35);
+  background-color: rgba(0, 0, 0, 0.4);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -358,18 +368,17 @@ header .wrapper #nav-container .toggle-icon img {
 }
 
 .section-about .black-div .about_text {
-  font-family: 'Russo One', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   color: white;
   text-align: center;
-  opacity: 8;
-  font-size: 34px;
-  max-width: 700px;
-  margin: 40px 0;
+  font-size: 40px;
+  max-width: 800px;
+  margin: 60px 0;
 }
 
 .section-about-apps {
   background-color: #190e30;
-  font-family: 'Russo One', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   padding: 50px 0;
 }
 
@@ -392,7 +401,7 @@ header .wrapper #nav-container .toggle-icon img {
 }
 
 .section-about-apps .wrapper .apps_description-block .black-div {
-  background-color: rgba(0, 0, 0, 0.35);
+  background-color: rgba(0, 0, 0, 0.4);
   border-radius: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -436,9 +445,9 @@ header .wrapper #nav-container .toggle-icon img {
 
 .section-about-apps .wrapper .apps_main-block .apps_applications .application_text {
   color: white;
-  font-size: 65px;
-  font-weight: 800;
-  line-height: 80px;
+  font-size: 90px;
+  font-weight: 500;
+  line-height: 100px;
   margin-bottom: 30px;
 }
 
@@ -446,10 +455,12 @@ header .wrapper #nav-container .toggle-icon img {
   color: white;
   border: none;
   outline: none;
-  font-size: 30px;
-  border-radius: 20px;
-  padding: 25px 0;
-  max-width: 400px;
+  font-size: 35px;
+  font-weight: 600;
+  border-radius: 40px;
+  padding: 40px 0;
+  cursor: pointer;
+  max-width: 440px;
 }
 
 .section-about-apps .wrapper .apps_main-block .apps_users {
@@ -466,13 +477,28 @@ header .wrapper #nav-container .toggle-icon img {
   max-width: 400px;
   color: white;
   font-size: 40px;
-  line-height: 40px;
-  text-align: right;
+  font-weight: 800;
+  line-height: 50px;
+  text-align: left;
 }
 
 footer {
-  background: -webkit-gradient(linear, left top, right top, color-stop(10%, #2beaff), to(#ff12e3));
-  background: linear-gradient(90deg, #2beaff 10%, #ff12e3 100%);
+  background: -webkit-gradient(linear, left top, right top, color-stop(10%, #2beaff), color-stop(60%, #ff12e3));
+  background: linear-gradient(90deg, #2beaff 10%, #ff12e3 60%);
+  position: relative;
+  border-radius: 3%;
+}
+
+footer::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  left: 0;
+  top: 0;
+  z-index: 0;
+  border-radius: 3%;
 }
 
 footer .wrapper .footer-cards {
@@ -503,8 +529,9 @@ footer .wrapper .footer-cards .card {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 20px 0;
+  padding: 40px 0;
   width: 20%;
+  z-index: 1;
 }
 
 @media screen and (max-width: 1000px) {
@@ -528,6 +555,15 @@ footer .wrapper .footer-cards .card span {
   font-family: 'Russo One', sans-serif;
   font-weight: bold;
   color: white;
+  padding-top: 15px;
+}
+
+footer .container {
+  width: 100%;
+  height: 120px;
+  background-color: #190E30;
+  position: absolute;
+  z-index: 5;
 }
 
 .section-robot {
