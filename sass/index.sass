@@ -1,6 +1,6 @@
 @import '_base.sass'
 .section-intro    
-    background: url(../img/fon.png) 
+    background: url(../img/fon.png) 100%
     height: 100vh    
     .wrapper
         width: 100%        
@@ -11,7 +11,6 @@
                 flex-direction: column                
                 align-items: flex-end
                 justify-content: center
-                
                 .title-content
                     display: flex
                     flex-direction: column
@@ -23,7 +22,7 @@
                         letter-spacing: inherit
                 .intro-button
                     color: #ffffff
-                    background: linear-gradient(90deg, rgba(255,18,227,1) 35%, rgba(43,234,255,1) 100%);
+                    background: linear-gradient(90deg, rgba(255,18,227,1) 35%, rgba(43,234,255,1) 100%)
                     font: 
                         size: 50px
                         weight: bold
@@ -33,4 +32,71 @@
                     width: 400px
                     border-radius: 20px
                     cursor: pointer
-        
+.section-robot
+    background: #190E30
+    .wrapper
+        display: flex
+        flex-direction: column
+        min-width: 100%
+        div
+            width: 100%
+            font-family: Arial, sans-serif   
+        .robot-title
+            display: flex
+            flex-direction: column
+            align-items: center    
+            justify-content: center
+            margin-top: 100px
+            &-1
+                min-height: 100%
+                color: white
+                font-size: 110px
+                font-weight: 700
+                text-transform: uppercase
+                text-align: center
+                .robot-special
+                    //color: #190E30
+                    //font-size: 90px
+                    //-webkit-text-stroke-color: linear-gradient(90deg, rgba(255,18,227,1) 35%, rgba(43,234,255,1) 100%)
+                    //-webkit-text-stroke-width: 2px
+                    //background: -webkit-linear-gradient(-91deg, #EEF85B 5%, #7AEC8D 53%, #09E5C3 91%)
+                    background: -webkit-linear-gradient(0deg, rgba(43,234,255,1) 35%, rgba(255,18,227,1) 100%)
+                    -webkit-background-clip: text
+                    -webkit-text-stroke: 4px transparent
+                    color: #190E30
+                    font-size: 180px
+            span
+                width: 100%
+                height: 50%
+        .robot-hand
+            height: 90rem
+            width: 100%
+            background: url(../img/hand.png) 100%
+                size: 100%
+                repeat: no-repeat
+                position: right
+            &-title
+                margin: 10% 10% 0 auto
+                width: 50%
+                display: flex
+                flex-wrap: wrap
+                text-align: right
+                span
+                    min-width: 100%
+                .robot-hand-1
+                    color: white
+                    font:
+                        size: 70px
+                        weight: 300
+                        family: 'Montserrat', sans-serif
+                .robot-hand-2
+                    font:
+                        size: 140px
+                        weight: bold
+                        family: 'Russo One', sans-serif
+                    background: -webkit-linear-gradient(0deg, rgba(43,234,255,1) 35%, rgba(255,18,227,1) 100%)
+                    -webkit-background-clip: text
+                    -webkit-text-fill-color: transparent
+
+            
+
