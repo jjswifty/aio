@@ -1,6 +1,9 @@
 @import '_base.sass'
-.section-intro    
-    background: url(../img/fon.png) 100%
+.section-intro       
+    background: url(../img/circle.png), url(../img/fon.png)
+    background-position: top right, center
+    background-size: 37%, cover
+    background-repeat: no-repeat        
     height: 100vh    
     .wrapper
         width: 100%        
@@ -11,16 +14,80 @@
                 flex-direction: column                
                 align-items: flex-end
                 justify-content: center
+                margin-top: 200px
+                
                 .title-content
                     display: flex
                     flex-direction: column
                     font-family: 'Russo One', sans-serif
                     .intro-title
                         color: #ffffff
-                        font-size: 60px
-                        margin-bottom: 50px
+                        font-size: 80px
+                        margin-bottom: 75px
                         letter-spacing: inherit
-                .intro-button
+                        text-align: right
+                        font-weight: 800
+                    .intro_title-gradient
+                        background: linear-gradient(90deg, rgba(43,234,255,1) 35%, rgba(255,18,227,1) 100%)
+                        -webkit-background-clip: text
+                        -webkit-text-fill-color: transparent
+                .button-block
+                    display: flex
+                    flex-direction: column
+                    .intro-button
+                        color: #ffffff
+                        background: linear-gradient(90deg, rgba(43,234,255,1) 35%, rgba(255,18,227,1) 100%)
+                        font: 
+                            size: 50px
+                            weight: bold
+                        border: none
+                        outline: none
+                        padding: 10px 0
+                        width: 400px
+                        border-radius: 20px
+                        cursor: pointer
+                        margin-bottom: 40px            
+                    .arrow
+                        width: 80px
+                        margin: 0 auto
+.video-svg_block
+    background: linear-gradient(90deg, rgba(43,234,255,1) 10%, rgba(255,18,227,1) 100%)
+
+    height: 120px
+    width: 100%
+    .svg-video
+        height: 120px
+
+
+.section-video
+    background: linear-gradient(90deg, rgba(255,18,227,1) 0%, rgba(25,14,48,1) 10%, rgba(25,14,48,1) 90%, rgba(43,234,255,1) 100%)
+    
+    .wrapper          
+        .video_block
+            width: 100%
+            display: flex
+            flex-direction: column                     
+            .video
+                height: 600px
+                border: 1px solid white
+                margin: 50px 0 100px 0                
+            .content_block
+                display: flex
+                flex-direction: column
+                align-items: center
+                margin-bottom: 30px                
+                .video_svg-content
+                    height: 80px
+                    margin-bottom: 30px                    
+                .video_title-content
+                    background: linear-gradient(90deg, rgba(43,234,255,1) 35%, rgba(255,18,227,1) 100%)
+                    -webkit-background-clip: text
+                    -webkit-text-fill-color: transparent
+                    font: 
+                        size: 30px
+                .video_description-content
+                    max-width: 700px
+                    text-align: center
                     color: #ffffff
                     background: linear-gradient(90deg, rgba(255,18,227,1) 35%, rgba(43,234,255,1) 100%)
                     font: 
@@ -32,6 +99,8 @@
                     width: 400px
                     border-radius: 20px
                     cursor: pointer
+                    font: 
+                        size: 26px
 .section-robot
     background: #190E30
     overflow: hidden
@@ -101,3 +170,10 @@
 
             
 
+                    
+                        
+                        
+
+                        
+                        
+        

@@ -65,7 +65,10 @@ section {
 }
 
 .section-intro {
-  background: url(../img/fon.png) 100%;
+  background: url(../img/circle.png), url(../img/fon.png);
+  background-position: top right, center;
+  background-size: 37%, cover;
+  background-repeat: no-repeat;
   height: 100vh;
 }
 
@@ -91,6 +94,7 @@ section {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin-top: 200px;
 }
 
 .section-intro .wrapper .intro .description .title-content {
@@ -106,12 +110,113 @@ section {
 
 .section-intro .wrapper .intro .description .title-content .intro-title {
   color: #ffffff;
-  font-size: 60px;
-  margin-bottom: 50px;
+  font-size: 80px;
+  margin-bottom: 75px;
   letter-spacing: inherit;
+  text-align: right;
+  font-weight: 800;
 }
 
-.section-intro .wrapper .intro .description .intro-button {
+.section-intro .wrapper .intro .description .title-content .intro_title-gradient {
+  background: -webkit-gradient(linear, left top, right top, color-stop(35%, #2beaff), to(#ff12e3));
+  background: linear-gradient(90deg, #2beaff 35%, #ff12e3 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.section-intro .wrapper .intro .description .button-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.section-intro .wrapper .intro .description .button-block .intro-button {
+  color: #ffffff;
+  background: -webkit-gradient(linear, left top, right top, color-stop(35%, #2beaff), to(#ff12e3));
+  background: linear-gradient(90deg, #2beaff 35%, #ff12e3 100%);
+  font-size: 50px;
+  font-weight: bold;
+  border: none;
+  outline: none;
+  padding: 10px 0;
+  width: 400px;
+  border-radius: 20px;
+  cursor: pointer;
+  margin-bottom: 40px;
+}
+
+.section-intro .wrapper .intro .description .button-block .arrow {
+  width: 80px;
+  margin: 0 auto;
+}
+
+.video-svg_block {
+  background: -webkit-gradient(linear, left top, right top, color-stop(10%, #2beaff), to(#ff12e3));
+  background: linear-gradient(90deg, #2beaff 10%, #ff12e3 100%);
+  height: 120px;
+  width: 100%;
+}
+
+.video-svg_block .svg-video {
+  height: 120px;
+}
+
+.section-video {
+  background: -webkit-gradient(linear, left top, right top, from(#ff12e3), color-stop(10%, #190e30), color-stop(90%, #190e30), to(#2beaff));
+  background: linear-gradient(90deg, #ff12e3 0%, #190e30 10%, #190e30 90%, #2beaff 100%);
+}
+
+.section-video .wrapper .video_block {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.section-video .wrapper .video_block .video {
+  height: 600px;
+  border: 1px solid white;
+  margin: 50px 0 100px 0;
+}
+
+.section-video .wrapper .video_block .content_block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 30px;
+}
+
+.section-video .wrapper .video_block .content_block .video_svg-content {
+  height: 80px;
+  margin-bottom: 30px;
+}
+
+.section-video .wrapper .video_block .content_block .video_title-content {
+  background: -webkit-gradient(linear, left top, right top, color-stop(35%, #2beaff), to(#ff12e3));
+  background: linear-gradient(90deg, #2beaff 35%, #ff12e3 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 30px;
+}
+
+.section-video .wrapper .video_block .content_block .video_description-content {
+  max-width: 700px;
+  text-align: center;
   color: #ffffff;
   background: -webkit-gradient(linear, left top, right top, color-stop(35%, #ff12e3), to(#2beaff));
   background: linear-gradient(90deg, #ff12e3 35%, #2beaff 100%);
@@ -123,6 +228,7 @@ section {
   width: 400px;
   border-radius: 20px;
   cursor: pointer;
+  font-size: 26px;
 }
 
 .section-robot {
