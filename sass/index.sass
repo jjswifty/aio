@@ -1,4 +1,5 @@
 @import '_base.sass'
+@import '_header.sass'
 .section-intro       
     background: url(../img/circle.png), url(../img/fon.png)
     background-position: top right, center
@@ -15,7 +16,6 @@
                 align-items: flex-end
                 justify-content: center
                 margin-top: 200px
-                
                 .title-content
                     display: flex
                     flex-direction: column
@@ -52,16 +52,13 @@
                         margin: 0 auto
 .video-svg_block
     background: linear-gradient(90deg, rgba(43,234,255,1) 10%, rgba(255,18,227,1) 100%)
-
     height: 120px
     width: 100%
     .svg-video
         height: 120px
 
-
 .section-video
     background: linear-gradient(90deg, rgba(255,18,227,1) 0%, rgba(25,14,48,1) 10%, rgba(25,14,48,1) 90%, rgba(43,234,255,1) 100%)
-    
     .wrapper          
         .video_block
             width: 100%
@@ -101,6 +98,7 @@
                     cursor: pointer
                     font: 
                         size: 26px
+
 .section-robot
     background: #190E30
     overflow: hidden
@@ -125,11 +123,6 @@
                 text-transform: uppercase
                 text-align: center
                 .robot-special
-                    //color: #190E30
-                    //font-size: 90px
-                    //-webkit-text-stroke-color: linear-gradient(90deg, rgba(255,18,227,1) 35%, rgba(43,234,255,1) 100%)
-                    //-webkit-text-stroke-width: 2px
-                    //background: -webkit-linear-gradient(-91deg, #EEF85B 5%, #7AEC8D 53%, #09E5C3 91%)
                     background: -webkit-linear-gradient(0deg, rgba(43,234,255,1) 35%, rgba(255,18,227,1) 100%)
                     -webkit-background-clip: text
                     -webkit-text-stroke: 4px transparent
@@ -168,12 +161,49 @@
                     -webkit-background-clip: text
                     -webkit-text-fill-color: transparent
 
-            
-
-                    
-                        
-                        
-
+.section-apps-promo
+    background: url(../img/woman.png),#190E30
+        position: bottom right, center
+        size: 55%, cover
+        repeat: no-repeat
+    .wrapper
+        display: flex
+        flex-direction: column
+        .promo-logo-table
+            width: 40%
+            height: 25%
+            padding:
+                left: 200px
+                top: 200px
+            img
+                width: 100%
+                height: 100%
+        .promo-available
+            height: 20%
+            width: 50%
+            margin-top: 500px
+            display: flex
+            flex-wrap: wrap
+            padding-left: 150px
+            img
+                width: 40%
+                height: 100%
+                margin: 0 5%               
+            button
+                display: block
+                margin: 5% auto
+                width: 50%
+                height: 7rem
+                border-radius: 30px
+                border: none
+                outline: none
+                font-size: 4rem
+                color: white
+                background: -webkit-linear-gradient(0deg, rgba(43,234,255,1) 35%, rgba(255,18,227,1) 100%)
+                cursor: pointer
+                transition: all .3s
+                &:hover
+                    transform: scale(1.05)
                         
                         
         
