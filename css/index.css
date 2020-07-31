@@ -424,6 +424,38 @@ button:hover {
   font-size: 32px;
 }
 
+@media screen and (max-width: 1360px) {
+  .section-about-apps .wrapper .apps_description-block .black-div span {
+    font-size: 28px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .section-about-apps .wrapper .apps_description-block .black-div span {
+    font-size: 22px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .section-about-apps .wrapper .apps_description-block .black-div span {
+    font-size: 18px;
+    font-weight: 600;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .section-about-apps .wrapper .apps_description-block .black-div span {
+    font-size: 14px;
+    font-weight: 400;
+  }
+}
+
+@media screen and (max-width: 570px) {
+  .section-about-apps .wrapper .apps_description-block .black-div span {
+    font-size: 12px;
+  }
+}
+
 .section-about-apps .wrapper .apps_main-block {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -433,6 +465,34 @@ button:hover {
           justify-content: space-between;
   max-width: 100%;
   margin-top: 70px;
+}
+
+@media screen and (max-width: 1360px) {
+  .section-about-apps .wrapper .apps_main-block {
+    margin-top: 40px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .section-about-apps .wrapper .apps_main-block {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-top: 20px;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .section-about-apps .wrapper .apps_main-block {
+    margin-top: 10px;
+  }
 }
 
 .section-about-apps .wrapper .apps_main-block .apps_applications {
@@ -445,12 +505,67 @@ button:hover {
           flex-direction: column;
 }
 
+@media screen and (max-width: 900px) {
+  .section-about-apps .wrapper .apps_main-block .apps_applications {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+}
+
 .section-about-apps .wrapper .apps_main-block .apps_applications .application_text {
   color: white;
   font-size: 90px;
   font-weight: 500;
   line-height: 100px;
   margin-bottom: 30px;
+}
+
+@media screen and (max-width: 1600px) {
+  .section-about-apps .wrapper .apps_main-block .apps_applications .application_text {
+    line-height: 80px;
+    font-size: 70px;
+  }
+}
+
+@media screen and (max-width: 1360px) {
+  .section-about-apps .wrapper .apps_main-block .apps_applications .application_text {
+    font-size: 60px;
+    font-weight: 400;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .section-about-apps .wrapper .apps_main-block .apps_applications .application_text {
+    line-height: 65px;
+    font-size: 48px;
+    font-weight: 400;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .section-about-apps .wrapper .apps_main-block .apps_applications .application_text {
+    line-height: 50px;
+    font-size: 40px;
+    font-weight: 500;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .section-about-apps .wrapper .apps_main-block .apps_applications .application_text {
+    text-align: center;
+    line-height: 64px;
+    font-size: 55px;
+    font-weight: 600;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .section-about-apps .wrapper .apps_main-block .apps_applications .application_text {
+    line-height: 56px;
+    font-size: 42px;
+    font-weight: 600;
+  }
 }
 
 .section-about-apps .wrapper .apps_main-block .apps_applications .apps_button {
@@ -465,6 +580,29 @@ button:hover {
   max-width: 440px;
 }
 
+@media screen and (max-width: 1360px) {
+  .section-about-apps .wrapper .apps_main-block .apps_applications .apps_button {
+    padding: 25px 0;
+    max-width: 360px;
+    font-size: 28px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .section-about-apps .wrapper .apps_main-block .apps_applications .apps_button {
+    padding: 25px 0;
+    max-width: 360px;
+    font-size: 22px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .section-about-apps .wrapper .apps_main-block .apps_applications .apps_button {
+    margin: 0 auto;
+    padding: 25px 25px;
+  }
+}
+
 .section-about-apps .wrapper .apps_main-block .apps_users {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -475,13 +613,69 @@ button:hover {
           flex-direction: column;
 }
 
+@media screen and (max-width: 900px) {
+  .section-about-apps .wrapper .apps_main-block .apps_users {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+}
+
 .section-about-apps .wrapper .apps_main-block .apps_users .icons-block_text {
+  margin-top: 10px;
   max-width: 400px;
   color: white;
   font-size: 40px;
   font-weight: 800;
   line-height: 50px;
   text-align: left;
+}
+
+@media screen and (max-width: 1600px) {
+  .section-about-apps .wrapper .apps_main-block .apps_users .icons-block_text {
+    max-width: 350px;
+    line-height: 40px;
+    font-size: 35px;
+    font-weight: 600;
+  }
+}
+
+@media screen and (max-width: 1360px) {
+  .section-about-apps .wrapper .apps_main-block .apps_users .icons-block_text {
+    max-width: 320px;
+    font-size: 32px;
+    font-weight: 500;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .section-about-apps .wrapper .apps_main-block .apps_users .icons-block_text {
+    max-width: 280px;
+    line-height: 36px;
+    font-size: 28px;
+    font-weight: 400;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .section-about-apps .wrapper .apps_main-block .apps_users .icons-block_text {
+    text-align: center;
+    max-width: 400px;
+    line-height: 48px;
+    font-size: 40px;
+    font-weight: 300;
+    margin-bottom: 15px;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .section-about-apps .wrapper .apps_main-block .apps_users .icons-block_text {
+    max-width: 320px;
+    line-height: 48px;
+    font-size: 32px;
+    font-weight: 300;
+    margin-bottom: 15px;
+  }
 }
 
 footer {
@@ -692,6 +886,13 @@ footer .container {
   padding-top: 200px;
 }
 
+@media screen and (max-width: 1360px) {
+  .section-apps-promo .wrapper .promo-logo-table {
+    padding-left: 80px;
+    padding-top: 200px;
+  }
+}
+
 @media screen and (max-width: 1000px) {
   .section-apps-promo .wrapper .promo-logo-table {
     padding: 0;
@@ -754,10 +955,18 @@ footer .container {
   transition: all .3s;
 }
 
+@media screen and (max-width: 1360px) {
+  .section-apps-promo .wrapper .promo-available button {
+    padding: 0 10px;
+    width: 55%;
+  }
+}
+
 @media screen and (max-width: 1000px) {
   .section-apps-promo .wrapper .promo-available button {
-    font-size: 30px;
-    height: 50px;
+    font-size: 40px;
+    height: 80px;
+    width: 25%;
   }
 }
 
