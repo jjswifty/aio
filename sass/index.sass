@@ -75,11 +75,12 @@ button
         .svg-video
             height: 120px
 .section-video
-    background: url(../img/fon-description.png)
+    background: url(../img/fon-description.png) 
         size: 100%
         position: center
         repeat: no-repeat
     width: 100%
+    max-height: 1080px
 
     .wrapper          
         .video_block
@@ -376,12 +377,28 @@ footer
                 font-weight: 700
                 text-transform: uppercase
                 text-align: center
+                @media screen and ( max-width: 1360px )
+                    font-size: 85px
+                @media screen and ( max-width: 1000px )
+                    font-size: 70px
+                @media screen and ( max-width: 900px )
+                    font-size: 55px
+                @media screen and ( max-width: 700px )
+                    font-size: 40px
                 .robot-special
                     background: -webkit-linear-gradient(0deg, rgba(43,234,255,1) 35%, rgba(255,18,227,1) 100%)
                     -webkit-background-clip: text
                     -webkit-text-stroke: 4px transparent
                     color: #190E30
                     font-size: 180px
+                    @media screen and ( max-width: 1360px )
+                        font-size: 130px
+                    @media screen and ( max-width: 1000px )
+                        font-size: 110px
+                    @media screen and ( max-width: 900px )
+                        font-size: 90px
+                    @media screen and ( max-width: 700px )
+                        font-size: 65px
             span
                 width: 100%
                 height: 50%
@@ -392,6 +409,12 @@ footer
                 size: 100%
                 repeat: no-repeat
                 position: right
+            @media screen and ( max-width: 1360px )
+                height: 60rem
+            @media screen and ( max-width: 1000px )
+                height: 40rem
+            @media screen and ( max-width: 900px )
+                height: 30rem
             &-title
                 margin: 10% 10% 0 auto
                 width: 50%
@@ -406,6 +429,15 @@ footer
                         size: 70px
                         weight: 300
                         family: 'Montserrat', sans-serif
+                    @media screen and ( max-width: 1360px )
+                        font-size: 60px
+                    @media screen and ( max-width: 1080px )
+                        font-size: 50px
+                    @media screen and ( max-width: 900px )
+                        font-size: 40px
+                    @media screen and ( max-width: 700px )
+                        font-size: 25px
+                    
                 .robot-hand-2
                     font:
                         size: 140px
@@ -414,6 +446,12 @@ footer
                     background: -webkit-linear-gradient(0deg, rgba(43,234,255,1) 35%, rgba(255,18,227,1) 100%)
                     -webkit-background-clip: text
                     -webkit-text-fill-color: transparent
+                    @media screen and ( max-width: 1360px )
+                        font-size: 120px
+                    @media screen and ( max-width: 1080px )
+                        font-size: 100px
+                    @media screen and ( max-width: 900px )
+                        font-size: 80px
 .section-apps-promo
     background: url(../img/woman.png),#190E30
         position: bottom right, center
@@ -449,6 +487,8 @@ footer
             display: flex
             flex-wrap: wrap
             padding-left: 150px
+            @media screen and ( max-width: 1360px )
+                margin-top: 300px
             @media screen and ( max-width: 1000px )
                 padding: 0
                 width: 100%
@@ -471,7 +511,7 @@ footer
                 cursor: pointer
                 transition: all .3s
                 @media screen and ( max-width: 1360px )
-                    padding: 0 10px
+                    padding: 0 20px
                     width: 55%
                 @media screen and ( max-width: 1000px )
                     font-size: 40px

@@ -300,6 +300,7 @@ button:hover {
   background-position: center;
   background-repeat: no-repeat;
   width: 100%;
+  max-height: 1080px;
 }
 
 .section-video .wrapper .video_block {
@@ -809,12 +810,60 @@ footer .container {
   text-align: center;
 }
 
+@media screen and (max-width: 1360px) {
+  .section-robot .wrapper .robot-title-1 {
+    font-size: 85px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .section-robot .wrapper .robot-title-1 {
+    font-size: 70px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .section-robot .wrapper .robot-title-1 {
+    font-size: 55px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .section-robot .wrapper .robot-title-1 {
+    font-size: 40px;
+  }
+}
+
 .section-robot .wrapper .robot-title-1 .robot-special {
   background: -webkit-linear-gradient(0deg, #2beaff 35%, #ff12e3 100%);
   -webkit-background-clip: text;
   -webkit-text-stroke: 4px transparent;
   color: #190E30;
   font-size: 180px;
+}
+
+@media screen and (max-width: 1360px) {
+  .section-robot .wrapper .robot-title-1 .robot-special {
+    font-size: 130px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .section-robot .wrapper .robot-title-1 .robot-special {
+    font-size: 110px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .section-robot .wrapper .robot-title-1 .robot-special {
+    font-size: 90px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .section-robot .wrapper .robot-title-1 .robot-special {
+    font-size: 65px;
+  }
 }
 
 .section-robot .wrapper .robot-title span {
@@ -829,6 +878,24 @@ footer .container {
   background-size: 100%;
   background-repeat: no-repeat;
   background-position: right;
+}
+
+@media screen and (max-width: 1360px) {
+  .section-robot .wrapper .robot-hand {
+    height: 60rem;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .section-robot .wrapper .robot-hand {
+    height: 40rem;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .section-robot .wrapper .robot-hand {
+    height: 30rem;
+  }
 }
 
 .section-robot .wrapper .robot-hand-title {
@@ -853,6 +920,30 @@ footer .container {
   font-family: 'Montserrat', sans-serif;
 }
 
+@media screen and (max-width: 1360px) {
+  .section-robot .wrapper .robot-hand-title .robot-hand-1 {
+    font-size: 60px;
+  }
+}
+
+@media screen and (max-width: 1080px) {
+  .section-robot .wrapper .robot-hand-title .robot-hand-1 {
+    font-size: 50px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .section-robot .wrapper .robot-hand-title .robot-hand-1 {
+    font-size: 40px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .section-robot .wrapper .robot-hand-title .robot-hand-1 {
+    font-size: 25px;
+  }
+}
+
 .section-robot .wrapper .robot-hand-title .robot-hand-2 {
   font-size: 140px;
   font-weight: bold;
@@ -860,6 +951,24 @@ footer .container {
   background: -webkit-linear-gradient(0deg, #2beaff 35%, #ff12e3 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+@media screen and (max-width: 1360px) {
+  .section-robot .wrapper .robot-hand-title .robot-hand-2 {
+    font-size: 120px;
+  }
+}
+
+@media screen and (max-width: 1080px) {
+  .section-robot .wrapper .robot-hand-title .robot-hand-2 {
+    font-size: 100px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .section-robot .wrapper .robot-hand-title .robot-hand-2 {
+    font-size: 80px;
+  }
 }
 
 .section-apps-promo {
@@ -925,6 +1034,12 @@ footer .container {
   padding-left: 150px;
 }
 
+@media screen and (max-width: 1360px) {
+  .section-apps-promo .wrapper .promo-available {
+    margin-top: 300px;
+  }
+}
+
 @media screen and (max-width: 1000px) {
   .section-apps-promo .wrapper .promo-available {
     padding: 0;
@@ -957,7 +1072,7 @@ footer .container {
 
 @media screen and (max-width: 1360px) {
   .section-apps-promo .wrapper .promo-available button {
-    padding: 0 10px;
+    padding: 0 20px;
     width: 55%;
   }
 }
