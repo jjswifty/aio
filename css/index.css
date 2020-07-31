@@ -200,7 +200,9 @@ button:hover {
 }
 
 .section-intro {
-  background: url(../img/fon.png);
+  background: url(../img/circle.png), url(../img/fon.png) 100%;
+  background-position: top right, left center;
+  background-size: 37%, cover;
   background-repeat: no-repeat;
 }
 
@@ -224,6 +226,7 @@ button:hover {
       -ms-flex-pack: center;
           justify-content: center;
   margin-top: 230px;
+  margin-bottom: 170px;
 }
 
 .section-intro .wrapper .intro .description .title-content {
@@ -305,6 +308,7 @@ button:hover {
 
 .section-video .wrapper .video_block {
   width: 100%;
+  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -315,11 +319,41 @@ button:hover {
   color: white;
   font-size: 80px;
   font-family: sans-serif;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .section-video .wrapper .video_block .video iframe {
-  margin: 50px 0 50px 0;
-  width: 100%;
+  margin: 50px 0;
+}
+
+@media screen and (max-width: 1360px) {
+  .section-video .wrapper .video_block .video iframe {
+    max-width: 896px;
+    max-height: 504px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .section-video .wrapper .video_block .video iframe {
+    max-width: 640px;
+    max-height: 360px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .section-video .wrapper .video_block .video iframe {
+    max-width: 448px;
+    max-height: 252px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .section-video .wrapper .video_block .video iframe {
+    max-width: 294px;
+    max-height: 165px;
+  }
 }
 
 .section-video .wrapper .video_block .content_block {
