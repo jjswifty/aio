@@ -32,25 +32,25 @@ button
             size: cover
             repeat: no-repeat
     @media screen and ( max-width: 900px )
-        background: url(../img/fon.png) 100%
+        background: 
             position: 12% 50%
             size: cover
-            repeat: no-repeat
+            
     @media screen and ( max-width: 800px )
-        background: url(../img/fon.png) 100%
+        background: 
             position: 20% 50%
             size: cover
-            repeat: no-repeat
+            
     @media screen and ( max-width: 700px )
-        background: url(../img/fon.png) 100%
+        background:
             position: 27% 50%
             size: cover
-            repeat: no-repeat
+            
     @media screen and ( max-width: 500px )
-        background: url(../img/fon.png) 100%
+        background:
             position: 30% 50%
             size: cover
-            repeat: no-repeat
+            
     .wrapper               
         .intro
             width: 100%
@@ -67,6 +67,7 @@ button
                     margin-bottom: 120px
                 @media screen and ( max-width: 900px )
                     align-items: center
+                    margin-top: 60px
                 @media screen and ( max-width: 700px )
                     margin-top: 30px
                          
@@ -97,6 +98,15 @@ button
                             font-size: 42px
                         @media screen and ( max-width: 400px )
                             font-size: 36px
+                    .text-gradient
+                        background: linear-gradient(90deg, rgba(43,234,255,1) 10%, rgba(255,18,227,1) 60%)
+                        -webkit-background-clip: text
+                        -webkit-text-fill-color: transparent
+                        @media screen and ( max-width: 900px )
+                            background: #190e30
+                            -webkit-background-clip: text
+                            -webkit-text-fill-color: transparent
+
                 .button-block
                     display: flex
                     flex-direction: column

@@ -224,37 +224,29 @@ button:hover {
 
 @media screen and (max-width: 900px) {
   .section-intro {
-    background: url(../img/fon.png) 100%;
     background-position: 12% 50%;
     background-size: cover;
-    background-repeat: no-repeat;
   }
 }
 
 @media screen and (max-width: 800px) {
   .section-intro {
-    background: url(../img/fon.png) 100%;
     background-position: 20% 50%;
     background-size: cover;
-    background-repeat: no-repeat;
   }
 }
 
 @media screen and (max-width: 700px) {
   .section-intro {
-    background: url(../img/fon.png) 100%;
     background-position: 27% 50%;
     background-size: cover;
-    background-repeat: no-repeat;
   }
 }
 
 @media screen and (max-width: 500px) {
   .section-intro {
-    background: url(../img/fon.png) 100%;
     background-position: 30% 50%;
     background-size: cover;
-    background-repeat: no-repeat;
   }
 }
 
@@ -293,6 +285,7 @@ button:hover {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    margin-top: 60px;
   }
 }
 
@@ -358,6 +351,21 @@ button:hover {
 @media screen and (max-width: 400px) {
   .section-intro .wrapper .intro .description .title-content .intro-title {
     font-size: 36px;
+  }
+}
+
+.section-intro .wrapper .intro .description .title-content .text-gradient {
+  background: -webkit-gradient(linear, left top, right top, color-stop(10%, #2beaff), color-stop(60%, #ff12e3));
+  background: linear-gradient(90deg, #2beaff 10%, #ff12e3 60%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@media screen and (max-width: 900px) {
+  .section-intro .wrapper .intro .description .title-content .text-gradient {
+    background: #190e30;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
 }
 
