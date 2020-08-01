@@ -201,9 +201,61 @@ button:hover {
 
 .section-intro {
   background: url(../img/circle.png), url(../img/fon.png) 100%;
-  background-position: top right, left center;
+  background-position: top right, center;
   background-size: 37%, cover;
   background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 1360px) {
+  .section-intro {
+    background-position: top right, center;
+    background-size: 37%, cover;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .section-intro {
+    background: url(../img/fon.png) 100%;
+    background-position: left center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .section-intro {
+    background: url(../img/fon.png) 100%;
+    background-position: 12% 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .section-intro {
+    background: url(../img/fon.png) 100%;
+    background-position: 20% 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .section-intro {
+    background: url(../img/fon.png) 100%;
+    background-position: 27% 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .section-intro {
+    background: url(../img/fon.png) 100%;
+    background-position: 30% 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
 }
 
 .section-intro .wrapper .intro {
@@ -229,6 +281,27 @@ button:hover {
   margin-bottom: 170px;
 }
 
+@media screen and (max-width: 1170px) {
+  .section-intro .wrapper .intro .description {
+    margin: 0 auto;
+    margin-bottom: 120px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .section-intro .wrapper .intro .description {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .section-intro .wrapper .intro .description {
+    margin-top: 30px;
+  }
+}
+
 .section-intro .wrapper .intro .description .title-content {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -238,6 +311,7 @@ button:hover {
       -ms-flex-direction: column;
           flex-direction: column;
   font-family: 'Russo One', sans-serif;
+  margin-top: 100px;
 }
 
 .section-intro .wrapper .intro .description .title-content .intro-title {
@@ -247,6 +321,44 @@ button:hover {
   letter-spacing: inherit;
   text-align: right;
   font-weight: 800;
+}
+
+@media screen and (max-width: 1360px) {
+  .section-intro .wrapper .intro .description .title-content .intro-title {
+    font-size: 60px;
+  }
+}
+
+@media screen and (max-width: 1170px) {
+  .section-intro .wrapper .intro .description .title-content .intro-title {
+    margin-bottom: 50px;
+    font-size: 50px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .section-intro .wrapper .intro .description .title-content .intro-title {
+    text-align: center;
+    font-size: 60px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .section-intro .wrapper .intro .description .title-content .intro-title {
+    font-size: 50px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .section-intro .wrapper .intro .description .title-content .intro-title {
+    font-size: 42px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .section-intro .wrapper .intro .description .title-content .intro-title {
+    font-size: 36px;
+  }
 }
 
 .section-intro .wrapper .intro .description .button-block {
@@ -261,7 +373,7 @@ button:hover {
 
 .section-intro .wrapper .intro .description .button-block .intro-button {
   color: #ffffff;
-  font-size: 50px;
+  font-size: 60px;
   font-weight: bold;
   border: none;
   outline: none;
@@ -272,9 +384,53 @@ button:hover {
   margin-bottom: 40px;
 }
 
+@media screen and (max-width: 1360px) {
+  .section-intro .wrapper .intro .description .button-block .intro-button {
+    width: 320px;
+    font-size: 50px;
+    font-weight: 400;
+  }
+}
+
+@media screen and (max-width: 1170px) {
+  .section-intro .wrapper .intro .description .button-block .intro-button {
+    width: 300px;
+    font-size: 40px;
+    font-weight: 400;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .section-intro .wrapper .intro .description .button-block .intro-button {
+    width: 240px;
+    font-size: 32px;
+    font-weight: 400;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .section-intro .wrapper .intro .description .button-block .intro-button {
+    width: 200px;
+    font-size: 28px;
+    font-weight: 400;
+  }
+}
+
 .section-intro .wrapper .intro .description .button-block .arrow {
   width: 80px;
   margin: 0 auto;
+}
+
+@media screen and (max-width: 1360px) {
+  .section-intro .wrapper .intro .description .button-block .arrow {
+    width: 60px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .section-intro .wrapper .intro .description .button-block .arrow {
+    width: 50px;
+  }
 }
 
 .video-svg_block {

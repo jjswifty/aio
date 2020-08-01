@@ -19,11 +19,38 @@ button
 
 .section-intro
     background: url(../img/circle.png), url(../img/fon.png) 100%
-        position: top right, left center
+        position: top right, center
         size: 37%, cover
         repeat: no-repeat        
-    //@media screen and ( max-width: 900px )
-    //    background-size: 37%, 100%      
+    @media screen and ( max-width: 1360px )
+        background:
+            position: top right, center
+            size: 37%, cover
+    @media screen and ( max-width: 1000px )
+        background: url(../img/fon.png) 100%
+            position: left center
+            size: cover
+            repeat: no-repeat
+    @media screen and ( max-width: 900px )
+        background: url(../img/fon.png) 100%
+            position: 12% 50%
+            size: cover
+            repeat: no-repeat
+    @media screen and ( max-width: 800px )
+        background: url(../img/fon.png) 100%
+            position: 20% 50%
+            size: cover
+            repeat: no-repeat
+    @media screen and ( max-width: 700px )
+        background: url(../img/fon.png) 100%
+            position: 27% 50%
+            size: cover
+            repeat: no-repeat
+    @media screen and ( max-width: 500px )
+        background: url(../img/fon.png) 100%
+            position: 30% 50%
+            size: cover
+            repeat: no-repeat
     .wrapper               
         .intro
             width: 100%
@@ -34,18 +61,42 @@ button
                 align-items: flex-end
                 justify-content: center
                 margin-top: 230px  
-                margin-bottom: 170px              
+                margin-bottom: 170px
+                @media screen and ( max-width: 1170px )
+                    margin: 0 auto
+                    margin-bottom: 120px
+                @media screen and ( max-width: 900px )
+                    align-items: center
+                @media screen and ( max-width: 700px )
+                    margin-top: 30px
+                         
                 .title-content
                     display: flex
                     flex-direction: column
                     font-family: 'Russo One', sans-serif
+                    margin-top: 100px
+                    
                     .intro-title
                         color: #ffffff
                         font-size: 80px
                         margin-bottom: 75px
                         letter-spacing: inherit
                         text-align: right
-                        font-weight: 800                    
+                        font-weight: 800
+                        @media screen and ( max-width: 1360px )
+                            font-size: 60px
+                        @media screen and ( max-width: 1170px )                     
+                            margin-bottom: 50px
+                            font-size: 50px
+                        @media screen and ( max-width: 900px )
+                            text-align: center
+                            font-size: 60px
+                        @media screen and ( max-width: 600px )
+                            font-size: 50px
+                        @media screen and ( max-width: 500px )
+                            font-size: 42px
+                        @media screen and ( max-width: 400px )
+                            font-size: 36px
                 .button-block
                     display: flex
                     flex-direction: column
@@ -53,7 +104,7 @@ button
                     .intro-button
                         color: #ffffff
                         font: 
-                            size: 50px
+                            size: 60px
                             weight: bold
                         border: none
                         outline: none
@@ -61,10 +112,36 @@ button
                         width: 400px
                         border-radius: 20px
                         cursor: pointer
-                        margin-bottom: 40px            
+                        margin-bottom: 40px
+                        @media screen and ( max-width: 1360px )
+                            width: 320px
+                            font: 
+                                size: 50px
+                                weight: 400
+
+                        @media screen and ( max-width: 1170px )
+                            width: 300px
+                            font: 
+                                size: 40px
+                                weight: 400
+                        @media screen and ( max-width: 500px )
+                            width: 240px
+                            font: 
+                                size: 32px
+                                weight: 400
+                        @media screen and ( max-width: 400px )
+                            width: 200px
+                            font: 
+                                size: 28px
+                                weight: 400
+
                     .arrow
                         width: 80px
                         margin: 0 auto
+                        @media screen and ( max-width: 1360px )
+                            width: 60px
+                        @media screen and ( max-width: 500px )
+                            width: 50px
 .video-svg_block
     height: 120px
     width: 100%
