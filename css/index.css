@@ -156,7 +156,7 @@ header .wrapper #nav-container {
 
 header .wrapper #nav-container .toggle-icon {
   width: 60px;
-  height: 60x;
+  height: 60px;
   padding: 5px;
 }
 
@@ -200,10 +200,11 @@ button:hover {
 }
 
 .section-intro {
-  background: url(../img/circle.png), url(../img/fon.png) 100%;
+  background: url(../img/circle.png), url(../img/fon.png);
   background-position: top right, center;
   background-size: 37%, cover;
   background-repeat: no-repeat;
+  height: 100vh;
 }
 
 @media screen and (max-width: 1360px) {
@@ -216,7 +217,7 @@ button:hover {
 @media screen and (max-width: 1000px) {
   .section-intro {
     background: url(../img/fon.png) 100%;
-    background-position: left center;
+    background-position: 10% 50%;
     background-size: cover;
     background-repeat: no-repeat;
   }
@@ -253,6 +254,15 @@ button:hover {
 .section-intro .wrapper .intro {
   width: 100%;
   height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 
 .section-intro .wrapper .intro .description {
@@ -269,30 +279,6 @@ button:hover {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-top: 230px;
-  margin-bottom: 170px;
-}
-
-@media screen and (max-width: 1170px) {
-  .section-intro .wrapper .intro .description {
-    margin: 0 auto;
-    margin-bottom: 120px;
-  }
-}
-
-@media screen and (max-width: 900px) {
-  .section-intro .wrapper .intro .description {
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    margin-top: 60px;
-  }
-}
-
-@media screen and (max-width: 700px) {
-  .section-intro .wrapper .intro .description {
-    margin-top: 30px;
-  }
 }
 
 .section-intro .wrapper .intro .description .title-content {
@@ -304,7 +290,6 @@ button:hover {
       -ms-flex-direction: column;
           flex-direction: column;
   font-family: 'Russo One', sans-serif;
-  margin-top: 100px;
 }
 
 .section-intro .wrapper .intro .description .title-content .intro-title {
@@ -331,7 +316,6 @@ button:hover {
 
 @media screen and (max-width: 900px) {
   .section-intro .wrapper .intro .description .title-content .intro-title {
-    text-align: center;
     font-size: 60px;
   }
 }
@@ -350,12 +334,13 @@ button:hover {
 
 @media screen and (max-width: 400px) {
   .section-intro .wrapper .intro .description .title-content .intro-title {
-    font-size: 36px;
+    font-size: 35px;
   }
 }
 
 .section-intro .wrapper .intro .description .title-content .text-gradient {
-  background: #ffffff;
+  background: -webkit-gradient(linear, left top, right top, color-stop(10%, #2beaff), color-stop(60%, #ff12e3));
+  background: linear-gradient(90deg, #2beaff 10%, #ff12e3 60%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
