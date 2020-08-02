@@ -1,0 +1,319 @@
+/* ERIC MEYER TY FOR THIS STYLES <3 */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* END OF ERIC MEIER */
+.wrapper {
+  max-width: 1700px;
+  height: 100%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0 10px;
+  overflow: hidden;
+}
+
+section {
+  width: 100%;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  z-index: 30;
+}
+
+header .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: sans-serif;
+}
+
+header .wrapper .nav-desk {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  width: 70%;
+  font-family: Arial, sans-serif;
+  font-size: 25px;
+}
+
+@media screen and (max-width: 900px) {
+  header .wrapper .nav-desk {
+    display: none;
+  }
+}
+
+header .wrapper .nav-desk li a {
+  text-decoration: none;
+  color: white;
+}
+
+header .wrapper .nav-mob {
+  padding-top: 15px;
+  width: 100px;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  height: 100vh;
+  margin-left: auto;
+  background: #190E30;
+  border-right: 1px solid white;
+  display: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+header .wrapper .nav-mob li {
+  margin-top: 20px;
+}
+
+header .wrapper .nav-mob li a {
+  text-decoration: none;
+  color: white;
+}
+
+header .wrapper #nav-container {
+  display: none;
+  position: absolute;
+  top: 5px;
+  left: 15px;
+  width: 100%;
+  height: 50px;
+}
+
+@media screen and (max-width: 900px) {
+  header .wrapper #nav-container {
+    display: block;
+  }
+}
+
+header .wrapper #nav-container .toggle-icon {
+  width: 60px;
+  height: 60px;
+  padding: 5px;
+}
+
+header .wrapper #nav-container .toggle-icon .close-menu {
+  display: none;
+}
+
+header .wrapper #nav-container .toggle-icon img {
+  width: 50px;
+  height: 50x;
+}
+
+body {
+  background-color: #190E30;
+}
+
+.section-questions {
+  background: url(../img/circle.png), url(../img/fon-description.png);
+  background-position: top right, center;
+  background-size: 30%, cover;
+  background-repeat: no-repeat;
+  font-family: 'Montserrat', sans-serif;
+  min-height: 100vh;
+}
+
+.section-questions .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.section-questions .wrapper .container::before {
+  z-index: 10;
+  position: absolute;
+  content: '';
+  height: 120px;
+  width: 120px;
+  top: -60px;
+  left: -60px;
+  background: url(../img/quest2.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 1360px) {
+  .section-questions .wrapper .container::before {
+    height: 100px;
+    width: 100px;
+    top: -50px;
+    left: -50px;
+  }
+}
+
+@media screen and (max-width: 1170px) {
+  .section-questions .wrapper .container::before {
+    height: 80px;
+    width: 80px;
+    top: -40px;
+    left: -40px;
+  }
+}
+
+.section-questions .wrapper .container {
+  position: relative;
+  background-color: rgba(255, 255, 255, 0.4);
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0 auto;
+  margin-top: 200px;
+}
+
+.section-questions .wrapper .container .content {
+  margin: 15px 0;
+}
+
+.section-questions .wrapper .container .content h4 {
+  padding-bottom: 7px;
+  margin: 10px auto;
+  margin-bottom: 25px;
+  width: 90%;
+  border-bottom: 3px solid transparent;
+  -o-border-image: linear-gradient(90deg, #2beaff 10%, #ff12e3 60%);
+     border-image: -webkit-gradient(linear, left top, right top, color-stop(10%, #2beaff), color-stop(60%, #ff12e3));
+     border-image: linear-gradient(90deg, #2beaff 10%, #ff12e3 60%);
+  border-image-slice: 1;
+  color: #ffffff;
+  font-size: 35px;
+}
+
+@media screen and (max-width: 900px) {
+  .section-questions .wrapper .container .content h4 {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .section-questions .wrapper .container .content h4 {
+    font-size: 30px;
+  }
+}
+
+.section-questions .wrapper .container .content .cards .card {
+  width: 90%;
+  margin: 25px auto;
+  background-color: #ffffff;
+  border: 1px solid black;
+  border-radius: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px 0;
+}
+
+.section-questions .wrapper .container .content .cards .card summary {
+  outline: none;
+  font-size: 30px;
+}
+
+.section-questions .wrapper .container .content .cards .card summary h3 {
+  margin: auto 0;
+  font-size: 25px;
+  padding: 0 20px;
+}
+
+@media screen and (max-width: 640px) {
+  .section-questions .wrapper .container .content .cards .card summary h3 {
+    font-size: 18px;
+  }
+}
+
+.section-questions .wrapper .container .content .cards .card p {
+  padding: 0 20px;
+  max-width: 90%;
+  font-size: 20px;
+}
+
+.section-questions .wrapper .container .content .cards .card summary::-webkit-details-marker {
+  display: none;
+}
+/*# sourceMappingURL=questions.css.map */

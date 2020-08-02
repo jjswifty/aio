@@ -1,0 +1,96 @@
+@import '_base.sass'
+@import '_header.sass'
+body
+    background-color: #190E30
+
+.section-questions
+    background: url(../img/circle.png), url(../img/fon-description.png)
+        position: top right, center
+        size: 30%, cover
+        repeat: no-repeat
+    font-family: 'Montserrat', sans-serif
+    min-height: 100vh
+    .wrapper
+        display: flex
+        align-items: center
+        flex-direction: column
+        
+        .container::before
+            z-index: 10
+            position: absolute
+            content: ''
+            height: 120px
+            width: 120px
+            top: -60px
+            left: -60px
+            background: url(../img/quest2.png)
+                size: 100%
+                repeat: no-repeat
+            @media screen and ( max-width: 1360px )
+                height: 100px
+                width: 100px
+                top: -50px
+                left: -50px
+            @media screen and ( max-width: 1170px )
+                height: 80px
+                width: 80px
+                top: -40px
+                left: -40px
+                
+        .container
+            position: relative   
+            background-color: rgba(255, 255, 255, 0.4)            
+            width: 80%            
+            display: flex
+            flex-direction: column
+            margin: 0 auto
+            margin-top: 200px
+            .content
+                margin: 15px 0                
+                h4
+                    padding-bottom: 7px           
+                    margin: 10px auto
+                    margin-bottom: 25px
+                    width: 90%
+                    border-bottom: 3px solid transparent
+                    border-image: linear-gradient(90deg, rgba(43,234,255,1) 10%, rgb(255, 18, 227) 60%)
+                    border-image-slice: 1
+                    color: #ffffff    
+                    font: 
+                        size: 35px
+                    @media screen and ( max-width: 900px )
+                        text-align: center
+                    @media screen and ( max-width: 760px )
+                        font-size: 30px
+                    
+                    
+                .cards
+                    .card
+                        width: 90%
+                        margin: 25px auto
+                        
+                        background-color: #ffffff
+                        border: 1px solid black
+                        border-radius: 15px                    
+                        display: flex
+                        justify-content: center
+                        align-items: center
+                        padding: 10px 0                    
+                        summary
+                            outline: none
+                            
+                            font-size: 30px                                                                            
+                            h3
+                                margin: auto 0
+                                font-size: 25px
+                                padding: 0 20px
+                                @media screen and ( max-width: 640px )
+                                    font-size: 18px
+                        p
+                            padding: 0 20px                            
+                            max-width: 90%
+                            font-size: 20px
+                            
+                        summary::-webkit-details-marker 
+                            display: none
+                
