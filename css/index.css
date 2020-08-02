@@ -171,6 +171,7 @@ header .wrapper #nav-container .toggle-icon img {
 
 body {
   background-color: #190E30;
+  scroll-behavior: smooth;
 }
 
 button {
