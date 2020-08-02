@@ -18,17 +18,19 @@ button
 
 
 .section-intro
-    background: url(../img/circle.png), url(../img/fon.png) 100%
+    background: url(../img/circle.png), url(../img/fon.png)
         position: top right, center
         size: 37%, cover
-        repeat: no-repeat        
+        repeat: no-repeat
+    height: 100vh
+                
     @media screen and ( max-width: 1360px )
         background:
             position: top right, center
             size: 37%, cover
     @media screen and ( max-width: 1000px )
         background: url(../img/fon.png) 100%
-            position: left center
+            position: 10% 50%
             size: cover
             repeat: no-repeat
     @media screen and ( max-width: 900px )
@@ -54,28 +56,25 @@ button
     .wrapper               
         .intro
             width: 100%
-            height: 100%        
+            height: 100%
+            display: flex
+            align-items: center
+            justify-content: flex-end      
             .description
                 display: flex
                 flex-direction: column                
                 align-items: flex-end
-                justify-content: center
-                margin-top: 230px  
-                margin-bottom: 170px
-                @media screen and ( max-width: 1170px )
-                    margin: 0 auto
-                    margin-bottom: 120px
-                @media screen and ( max-width: 900px )
-                    align-items: center
-                    margin-top: 60px
-                @media screen and ( max-width: 700px )
-                    margin-top: 30px
+                justify-content: center                
+                //@media screen and ( max-width: 1170px )                    
+                //@media screen and ( max-width: 900px )                    
+                //@media screen and ( max-width: 700px )
+                   
                          
                 .title-content
                     display: flex
                     flex-direction: column
                     font-family: 'Russo One', sans-serif
-                    margin-top: 100px
+                    
                     
                     .intro-title
                         color: #ffffff
@@ -90,16 +89,16 @@ button
                             margin-bottom: 50px
                             font-size: 50px
                         @media screen and ( max-width: 900px )
-                            text-align: center
+                            
                             font-size: 60px
                         @media screen and ( max-width: 600px )
                             font-size: 50px
                         @media screen and ( max-width: 500px )
                             font-size: 42px
                         @media screen and ( max-width: 400px )
-                            font-size: 36px
+                            font-size: 35px
                     .text-gradient
-                        background: #ffffff
+                        background: linear-gradient(90deg, rgba(43,234,255,1) 10%, rgba(255,18,227,1) 60%)
                         -webkit-background-clip: text
                         -webkit-text-fill-color: transparent
                         @media screen and ( max-width: 900px )
@@ -134,6 +133,8 @@ button
                             font: 
                                 size: 40px
                                 weight: 400
+                        //@media screen and ( max-width: 600px )
+                            
                         @media screen and ( max-width: 500px )
                             width: 240px
                             font: 
