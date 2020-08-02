@@ -1,30 +1,82 @@
 @import '_base.sass'
 @import '_header.sass'
-
+body
+    background-color: #190E30
+button
+    transition: all .3s
+    &:hover
+        transform: scale(1.05)
 .gradient
+    background: linear-gradient(90deg, rgba(43,234,255,1) 10%, rgb(255, 18, 227) 60%)
+.gradient-text
     background: linear-gradient(90deg, rgba(43,234,255,1) 10%, rgba(255,18,227,1) 60%)
+    -webkit-background-clip: text
+    -webkit-text-fill-color: transparent
+.black
+    background-color: rgba( 0, 0, 0, 0.4)
+
+
+
 .section-intro
-    background: url(../img/circle.png), url(../img/fon.png)
+    background: url(../img/circle.png), url(../img/fon.png) 100%
         position: top right, center
         size: 37%, cover
-        repeat: no-repeat 
-    //@media screen and ( max-width: 900px )
-    //    background-size: 37%, 100%       
-    // НИКОГДА НЕ СТАВЬ ФИКСИРОВАННУЮ ВЫСОТУ БЛЯТЬ ! height: 1080px УБЬЮ НАХУЙ ! 
-    .wrapper
-               
+        repeat: no-repeat        
+    @media screen and ( max-width: 1360px )
+        background:
+            position: top right, center
+            size: 37%, cover
+    @media screen and ( max-width: 1000px )
+        background: url(../img/fon.png) 100%
+            position: left center
+            size: cover
+            repeat: no-repeat
+    @media screen and ( max-width: 900px )
+        background: 
+            position: 12% 50%
+            size: cover
+            
+    @media screen and ( max-width: 800px )
+        background: 
+            position: 20% 50%
+            size: cover
+            
+    @media screen and ( max-width: 700px )
+        background:
+            position: 27% 50%
+            size: cover
+            
+    @media screen and ( max-width: 500px )
+        background:
+            position: 30% 50%
+            size: cover
+            
+    .wrapper               
         .intro
-            width: 100%            
+            width: 100%
+            height: 100%        
             .description
                 display: flex
                 flex-direction: column                
                 align-items: flex-end
                 justify-content: center
-                margin-top: 230px                
+                margin-top: 230px  
+                margin-bottom: 170px
+                @media screen and ( max-width: 1170px )
+                    margin: 0 auto
+                    margin-bottom: 120px
+                @media screen and ( max-width: 900px )
+                    align-items: center
+                    margin-top: 60px
+                @media screen and ( max-width: 700px )
+                    margin-top: 30px
+                         
                 .title-content
                     display: flex
                     flex-direction: column
                     font-family: 'Russo One', sans-serif
+                    margin-top: 100px
+                    
                     .intro-title
                         color: #ffffff
                         font-size: 80px
@@ -32,19 +84,37 @@
                         letter-spacing: inherit
                         text-align: right
                         font-weight: 800
-                    .intro_title-gradient
-                        background: linear-gradient(90deg, rgba(43,234,255,1) 35%, rgba(255,18,227,1) 100%)
+                        @media screen and ( max-width: 1360px )
+                            font-size: 60px
+                        @media screen and ( max-width: 1170px )                     
+                            margin-bottom: 50px
+                            font-size: 50px
+                        @media screen and ( max-width: 900px )
+                            text-align: center
+                            font-size: 60px
+                        @media screen and ( max-width: 600px )
+                            font-size: 50px
+                        @media screen and ( max-width: 500px )
+                            font-size: 42px
+                        @media screen and ( max-width: 400px )
+                            font-size: 36px
+                    .text-gradient
+                        background: #ffffff
                         -webkit-background-clip: text
                         -webkit-text-fill-color: transparent
+                        @media screen and ( max-width: 900px )
+                            background: #ffffff
+                            -webkit-background-clip: text
+                            -webkit-text-fill-color: transparent
+
                 .button-block
                     display: flex
                     flex-direction: column
-                    padding-bottom: 300px
+                    //padding-bottom: 300px
                     .intro-button
                         color: #ffffff
-                        background: linear-gradient(90deg, rgba(43,234,255,1) 35%, rgba(255,18,227,1) 100%)
                         font: 
-                            size: 50px
+                            size: 60px
                             weight: bold
                         border: none
                         outline: none
@@ -52,37 +122,82 @@
                         width: 400px
                         border-radius: 20px
                         cursor: pointer
-                        margin-bottom: 40px            
+                        margin-bottom: 40px
+                        @media screen and ( max-width: 1360px )
+                            width: 320px
+                            font: 
+                                size: 50px
+                                weight: 400
+
+                        @media screen and ( max-width: 1170px )
+                            width: 300px
+                            font: 
+                                size: 40px
+                                weight: 400
+                        @media screen and ( max-width: 500px )
+                            width: 240px
+                            font: 
+                                size: 32px
+                                weight: 400
+                        @media screen and ( max-width: 400px )
+                            width: 200px
+                            font: 
+                                size: 28px
+                                weight: 400
+
                     .arrow
                         width: 80px
                         margin: 0 auto
-
+                        @media screen and ( max-width: 1360px )
+                            width: 60px
+                        @media screen and ( max-width: 500px )
+                            width: 50px
 .video-svg_block
-    background: linear-gradient(90deg, rgba(43,234,255,1) 10%, rgba(255,18,227,1) 100%)
     height: 120px
     width: 100%
     .black-div
         height: 120px
-        background-color: rgba( 0, 0, 0, 0.5)        
+        background-color: rgba( 0, 0, 0, 0.4)        
         display: flex
         justify-content: center
         .svg-video
             height: 120px
-
 .section-video
-    background: linear-gradient(90deg, rgba(255,18,227,1) 0%, rgba(25,14,48,1) 10%, rgba(25,14,48,1) 90%, rgba(43,234,255,1) 100%)    
+    background: url(../img/fon-description.png) 
+        size: cover
+        position: center
+        repeat: no-repeat
+    width: 100%
+    max-height: 1080px
+
     .wrapper          
         .video_block
             width: 100%
+            height: 100%
             display: flex
             flex-direction: column   
             color: white
             font-size: 80px
-            font-family: sans-serif                  
+            font-family: sans-serif
+            align-items: center
+            
+                                                       
             .video
-                height: 600px
-                border: 1px solid white
-                margin: 50px 0 100px 0                
+                                    
+                iframe
+                    margin: 50px 0   
+                    @media screen and ( max-width: 1360px  )
+                        max-width: 896px
+                        max-height: 504px
+                    @media screen and ( max-width: 1000px  )
+                        max-width: 640px
+                        max-height: 360px 
+                    @media screen and ( max-width: 700px  )
+                        max-width: 448px
+                        max-height: 252px 
+                    @media screen and ( max-width: 500px  )
+                        max-width: 294px
+                        max-height: 165px 
             .content_block
                 display: flex
                 flex-direction: column
@@ -91,13 +206,14 @@
                 font-family: 'Russo One', sans-serif             
                 .video_svg-content
                     height: 80px
-                    margin-bottom: 30px                    
-                .video_title-content
-                    background: linear-gradient(90deg, rgba(43,234,255,1) 35%, rgba(255,18,227,1) 100%)
-                    -webkit-background-clip: text
-                    -webkit-text-fill-color: transparent
+                    margin-bottom: 30px
+                    @media screen and ( max-width: 600px  )
+                        margin-bottom: 10px
+                                            
+                .video_title-content                    
                     font: 
                         size: 30px
+                        weight: 600
                     padding-bottom: 10px
                 .video_description-content
                     max-width: 700px
@@ -105,36 +221,50 @@
                     color: #ffffff
                     font: 
                         size: 26px
+                    @media screen and ( max-width: 700px )
+                        max-width: 600px
+                        font-size: 22px
 .section-about
     width: 100%    
     .black-div        
-        background-color: rgba( 0, 0, 0, 0.35)        
+        background-color: rgba( 0, 0, 0, 0.4)        
         display: flex
         justify-content: center
         .about_text
-            font-family: 'Russo One', sans-serif
+            font-family: 'Montserrat', sans-serif
             color: white
-            text-align: center
-            opacity: 8
+            text-align: center            
             font:
-                size: 34px   
-            max-width: 700px
-            margin: 40px 0
+                size: 40px   
+            max-width: 800px
+            margin: 60px 0
+            @media screen and ( max-width: 1000px )
+                max-width: 700px
+                font-size: 30px
+            @media screen and ( max-width: 700px )
+                max-width: 600px
+                font-size: 25px
+            @media screen and ( max-width: 580px )
+                max-width: 500px
+                font-size: 22px
+            
 .section-about-apps
     background-color: #190e30
-    font-family: 'Russo One', sans-serif
+    font-family: 'Montserrat', sans-serif
     padding: 50px 0 //нужно убрать, сделано для отделения блока
     .wrapper
         display: flex
         flex-direction: column
         max-width: 70%
+        @media screen and ( max-width: 760px )
+            max-width: 90%
         .apps_description-block
             border-radius: 20px
             border: none            
             margin: 0 auto
             width: 100%                
             .black-div
-                background-color: rgba( 0, 0, 0, 0.35)
+                background-color: rgba( 0, 0, 0, 0.4)
                 border-radius: 20px
                 display: flex
                 flex-direction: column
@@ -144,44 +274,184 @@
                     padding: 3px 0
                     color: white
                     font:
-                        size: 32px 
+                        size: 32px
+                    @media screen and ( max-width: 1360px )
+                        font: 
+                            size: 28px
+                    @media screen and ( max-width: 1200px )
+                        font: 
+                            size: 22px
+                    @media screen and ( max-width: 900px )
+                        font: 
+                            size: 18px
+                            weight: 600
+                    @media screen and ( max-width: 760px )
+                        font: 
+                            size: 18px
+                            weight: 400
+                    @media screen and ( max-width: 570px )
+                        font: 
+                            size: 16px
+                    @media screen and ( max-width: 500px )
+                        font: 
+                            size: 14px
+                    @media screen and ( max-width: 420px )
+                        text-align: center
+
         .apps_main-block
             display: flex
             justify-content: space-between
             max-width: 100%
             margin-top: 70px
+            @media screen and ( max-width: 1360px )
+                margin-top: 40px
+            @media screen and ( max-width: 900px )
+                display: flex
+                flex-direction: column
+                align-items: center
+                margin-top: 20px
+            @media screen and ( max-width: 760px )
+                margin-top: 10px
             .apps_applications
                 display: flex
                 flex-direction: column
+                @media screen and ( max-width: 900px )
+                    order: 2
                 .application_text
                     color: white
                     font: 
-                        size: 65px
-                        weight: 800
-                    line-height: 80px
+                        size: 90px
+                        weight: 500
+                    line-height: 100px
                     margin-bottom: 30px
+                    @media screen and ( max-width: 1600px )
+                        line-height: 80px
+                        font: 
+                            size: 70px
+                    @media screen and ( max-width: 1360px )
+                        font: 
+                            size: 60px
+                            weight: 400
+                    @media screen and ( max-width: 1200px )
+                        line-height: 65px
+                        font: 
+                            size: 48px
+                            weight: 400
+                    @media screen and ( max-width: 1000px )
+                        line-height: 50px
+                        font: 
+                            size: 40px
+                            weight: 500
+                    @media screen and ( max-width: 900px )
+                        text-align: center
+                        line-height: 64px
+                        font: 
+                            size: 55px
+                            weight: 600
+                    @media screen and ( max-width: 760px )
+                        line-height: 56px
+                        font: 
+                            size: 42px
+                            weight: 600
+                    @media screen and ( max-width: 500px )
+                        font: 
+                            size: 38px
+
+                        
+
+
                 .apps_button
                     color: white
                     border: none
                     outline: none
                     font: 
-                        size: 30px
-                    border-radius: 20px
-                    padding: 25px 0
-                    max-width: 400px
+                        size: 35px
+                        weight: 600
+                    border-radius: 40px
+                    padding: 40px 0
+                    cursor: pointer
+                    max-width: 440px
+                    @media screen and ( max-width: 1360px )
+                        padding: 25px 0
+                        max-width: 360px
+                        font: 
+                            size: 28px
+                    @media screen and ( max-width: 1000px )
+                        padding: 25px 0
+                        max-width: 360px
+                        font: 
+                            size: 22px
+                    @media screen and ( max-width: 900px )
+                        margin: 0 auto
+                        padding: 25px 25px
+
+                    
             .apps_users
                 display: flex
-                flex-direction: column                                      
+                flex-direction: column
+                @media screen and ( max-width: 900px )
+                    order: 1                                     
                 .icons-block_text
+                    margin-top: 10px
                     max-width: 400px
                     color: white
                     font: 
                         size: 40px
-                    line-height: 40px
-                    text-align: right
+                        weight: 800
+                    line-height: 50px
+                    text-align: left
+                    @media screen and ( max-width: 1600px )
+                        max-width: 350px
+                        line-height: 40px
+                        font: 
+                            size: 35px
+                            weight: 600
+                    @media screen and ( max-width: 1360px )
+                        max-width: 320px
+                        font: 
+                            size: 32px
+                            weight: 500
+                    @media screen and ( max-width: 1000px )
+                        max-width: 280px
+                        line-height: 36px
+                        font: 
+                            size: 28px
+                            weight: 400
+                    @media screen and ( max-width: 900px )
+                        text-align: center
+                        max-width: 400px
+                        line-height: 48px
+                        font: 
+                            size: 40px
+                            weight: 300
+                        margin-bottom: 15px
+                    @media screen and ( max-width: 760px )                        
+                        max-width: 320px
+                        line-height: 42px
+                        font: 
+                            size: 32px
+                            weight: 300
+                        margin-bottom: 15px
+                    @media screen and ( max-width: 500px )  
+                        font: 
+                            size: 28px 
+                    
 footer
-    background: linear-gradient(90deg, rgba(43,234,255,1) 10%, rgba(255,18,227,1) 100%)
-    .wrapper        
+    background: linear-gradient(90deg, rgba(43,234,255,1) 10%, rgba(255,18,227,1) 60%)
+    position: relative
+    border-radius: 3%
+    &::after
+        content: ''
+        position: absolute
+        width: 100%
+        height: 100%
+        background-color: rgba( 0, 0, 0, 0.4)
+        left: 0
+        top: 0
+        z-index: 0
+        border-radius: 3%     
+
+    .wrapper             
         .footer-cards
             display: flex
             justify-content: space-evenly
@@ -194,8 +464,10 @@ footer
                 display: flex
                 flex-direction: column
                 align-items: center
-                padding: 20px 0 
-                width: 20%              
+                padding: 40px 0
+                
+                width: 20%
+                z-index: 1            
                 img
                     @media screen and ( max-width: 1000px )
                         width: 100px
@@ -207,7 +479,13 @@ footer
                         family: 'Russo One', sans-serif
                         weight: bold
                     color: white
-                      
+                    padding-top: 15px
+    .container
+        width: 100%
+        height: 120px
+        background-color: #190E30
+        position: absolute
+        z-index: 5
 .section-robot
     background: #190E30
     overflow: hidden
@@ -224,6 +502,8 @@ footer
             align-items: center    
             justify-content: center
             margin-top: 100px
+            @media screen and ( max-width: 700px )
+                margin-top: 60px
             &-1
                 min-height: 100%
                 color: white
@@ -231,12 +511,36 @@ footer
                 font-weight: 700
                 text-transform: uppercase
                 text-align: center
+                @media screen and ( max-width: 1360px )
+                    font-size: 85px
+                @media screen and ( max-width: 1000px )
+                    font-size: 70px
+                @media screen and ( max-width: 900px )
+                    font-size: 55px
+                @media screen and ( max-width: 700px )
+                    font-size: 40px
+                @media screen and ( max-width: 520px )
+                    font-size: 30px
+                @media screen and ( max-width: 420px )
+                    font-size: 20px
                 .robot-special
                     background: -webkit-linear-gradient(0deg, rgba(43,234,255,1) 35%, rgba(255,18,227,1) 100%)
                     -webkit-background-clip: text
                     -webkit-text-stroke: 4px transparent
                     color: #190E30
                     font-size: 180px
+                    @media screen and ( max-width: 1360px )
+                        font-size: 130px
+                    @media screen and ( max-width: 1000px )
+                        font-size: 110px
+                    @media screen and ( max-width: 900px )
+                        font-size: 90px
+                    @media screen and ( max-width: 700px )
+                        font-size: 65px
+                    @media screen and ( max-width: 520px )
+                        font-size: 50px
+                    @media screen and ( max-width: 420px )
+                        font-size: 36px
             span
                 width: 100%
                 height: 50%
@@ -247,12 +551,24 @@ footer
                 size: 100%
                 repeat: no-repeat
                 position: right
+            @media screen and ( max-width: 1360px )
+                height: 60rem
+            @media screen and ( max-width: 1000px )
+                height: 40rem
+            @media screen and ( max-width: 900px )
+                height: 30rem
+            @media screen and ( max-width: 600px )
+                height: 25rem
+            @media screen and ( max-width: 450px )
+                height: 20rem
             &-title
                 margin: 10% 10% 0 auto
                 width: 50%
                 display: flex
                 flex-wrap: wrap
                 text-align: right
+                @media screen and ( max-width: 500px )
+                    width: 63%
                 span
                     min-width: 100%
                 .robot-hand-1
@@ -261,6 +577,17 @@ footer
                         size: 70px
                         weight: 300
                         family: 'Montserrat', sans-serif
+                    @media screen and ( max-width: 1360px )
+                        font-size: 60px
+                    @media screen and ( max-width: 1080px )
+                        font-size: 50px
+                    @media screen and ( max-width: 900px )
+                        font-size: 40px
+                    @media screen and ( max-width: 700px )
+                        font-size: 25px
+                    @media screen and ( max-width: 500px )
+                        font-size: 22px
+                    
                 .robot-hand-2
                     font:
                         size: 140px
@@ -269,7 +596,14 @@ footer
                     background: -webkit-linear-gradient(0deg, rgba(43,234,255,1) 35%, rgba(255,18,227,1) 100%)
                     -webkit-background-clip: text
                     -webkit-text-fill-color: transparent
-
+                    @media screen and ( max-width: 1360px )
+                        font-size: 120px
+                    @media screen and ( max-width: 1080px )
+                        font-size: 100px
+                    @media screen and ( max-width: 900px )
+                        font-size: 80px
+                    @media screen and ( max-width: 500px )
+                        font-size: 60px
 .section-apps-promo
     background: url(../img/woman.png),#190E30
         position: bottom right, center
@@ -284,6 +618,10 @@ footer
             padding:
                 left: 200px
                 top: 200px
+            @media screen and ( max-width: 1360px )
+                padding: 
+                    left: 80px
+                    top: 200px
             @media screen and ( max-width: 1000px )
                 padding: 0
                 width: 100%
@@ -301,6 +639,8 @@ footer
             display: flex
             flex-wrap: wrap
             padding-left: 150px
+            @media screen and ( max-width: 1360px )
+                margin-top: 300px
             @media screen and ( max-width: 1000px )
                 padding: 0
                 width: 100%
@@ -322,9 +662,23 @@ footer
                 background: -webkit-linear-gradient(0deg, rgba(43,234,255,1) 35%, rgba(255,18,227,1) 100%)
                 cursor: pointer
                 transition: all .3s
+                @media screen and ( max-width: 1360px )
+                    padding: 0 20px
+                    width: 55%
                 @media screen and ( max-width: 1000px )
-                    font-size: 30px
-                    height: 50px
+                    font-size: 40px
+                    height: 80px
+                    width: 25%
+                @media screen and ( max-width: 800px )
+                    font-size: 35px
+                    height: 80px
+                    width: 30%
+                @media screen and ( max-width: 600px )
+                    font-size: 35px
+                    height: 80px
+                    width: 40%
+                @media screen and ( max-width: 450px )
+                    width: 60%
                 &:hover
                     transform: scale(1.05)
                         
