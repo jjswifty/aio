@@ -355,15 +355,14 @@ button:hover {
 }
 
 .section-intro .wrapper .intro .description .title-content .text-gradient {
-  background: -webkit-gradient(linear, left top, right top, color-stop(10%, #2beaff), color-stop(60%, #ff12e3));
-  background: linear-gradient(90deg, #2beaff 10%, #ff12e3 60%);
+  background: #ffffff;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 @media screen and (max-width: 900px) {
   .section-intro .wrapper .intro .description .title-content .text-gradient {
-    background: #190e30;
+    background: #ffffff;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
