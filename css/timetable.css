@@ -1,1 +1,261 @@
-/* No CSS *//*# sourceMappingURL=timetable.css.map */
+/* ERIC MEYER TY FOR THIS STYLES <3 */
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* END OF ERIC MEIER */
+.wrapper {
+  max-width: 1700px;
+  height: 100%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0 10px;
+  overflow: hidden;
+}
+
+section {
+  width: 100%;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  z-index: 30;
+}
+
+header .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: sans-serif;
+}
+
+header .wrapper .nav-desk {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  width: 70%;
+  font-family: Arial, sans-serif;
+  font-size: 25px;
+}
+
+@media screen and (max-width: 900px) {
+  header .wrapper .nav-desk {
+    display: none;
+  }
+}
+
+header .wrapper .nav-desk li a {
+  text-decoration: none;
+  color: white;
+}
+
+header .wrapper .nav-mob {
+  padding-top: 15px;
+  width: 100px;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  height: 100vh;
+  margin-left: auto;
+  background: #190E30;
+  border-right: 1px solid white;
+  display: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+header .wrapper .nav-mob li {
+  margin-top: 20px;
+}
+
+header .wrapper .nav-mob li a {
+  text-decoration: none;
+  color: white;
+}
+
+header .wrapper #nav-container {
+  display: none;
+  position: absolute;
+  top: 5px;
+  left: 15px;
+  width: 100%;
+  height: 50px;
+}
+
+@media screen and (max-width: 900px) {
+  header .wrapper #nav-container {
+    display: block;
+  }
+}
+
+header .wrapper #nav-container .toggle-icon {
+  width: 60px;
+  height: 60px;
+  padding: 5px;
+}
+
+header .wrapper #nav-container .toggle-icon .close-menu {
+  display: none;
+}
+
+header .wrapper #nav-container .toggle-icon img {
+  width: 50px;
+  height: 50x;
+}
+
+body {
+  background-color: #190E30;
+}
+
+.section-timetable {
+  font-family: 'Montserrat', sans-serif;
+  min-height: 100vh;
+}
+
+.section-timetable .wrapper .container {
+  padding-top: 130px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 auto;
+  width: 70%;
+}
+
+.section-timetable .wrapper .container h2 {
+  color: #ffffff;
+  font-size: 40px;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+@media screen and (max-width: 900px) {
+  .section-timetable .wrapper .container h2 {
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .section-timetable .wrapper .container h2 {
+    font-size: 24px;
+  }
+}
+
+.section-timetable .wrapper .container .content .cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  max-width: 900px;
+}
+
+.section-timetable .wrapper .container .content .cards .card {
+  min-height: 320px;
+  min-width: 250px;
+  text-align: center;
+  background: -webkit-gradient(linear, left top, right top, color-stop(10%, #2beaff), color-stop(60%, #ff12e3));
+  background: linear-gradient(90deg, #2beaff 10%, #ff12e3 60%);
+  margin: 10px 10px;
+  padding: 10px 10px;
+  border-radius: 30px;
+}
+
+.section-timetable .wrapper .container .content .cards .card .card-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-width: 250px;
+  margin: 0 auto;
+}
+
+.section-timetable .wrapper .container .content .cards .card .card-content h3 {
+  font-size: 25px;
+  padding-bottom: 10px;
+}
+/*# sourceMappingURL=timetable.css.map */

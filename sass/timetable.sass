@@ -1,0 +1,54 @@
+@import '_base.sass'
+@import '_header.sass'
+
+body
+    background-color: #190E30
+
+.section-timetable
+    font-family: 'Montserrat', sans-serif
+    min-height: 100vh
+    .wrapper
+        .container
+            padding-top: 130px
+            display: flex
+            flex-direction: column
+            align-items: center
+            margin: 0 auto
+            width: 70%
+            h2
+                color: #ffffff
+                font-size: 40px
+                margin-bottom: 50px
+                text-align: center
+                @media screen and ( max-width: 900px )
+                    font-size: 30px
+                @media screen and ( max-width: 600px )
+                    font-size: 24px
+                
+                     
+            .content
+                
+                .cards
+                    display: flex
+                    flex-wrap: wrap
+                    justify-content: center
+                    max-width: 900px
+                    .card
+                        min-height: 320px
+                        min-width: 250px
+
+                        text-align: center
+                        background: linear-gradient(90deg, rgba(43,234,255,1) 10%, rgb(255, 18, 227) 60%)
+                        margin: 10px 10px
+                        padding: 10px 10px
+                        border-radius: 30px
+                        .card-content
+                            display: flex
+                            flex-direction: column
+                            max-width: 250px
+                            margin: 0 auto
+                            h3
+                                font-size: 25px
+                                padding-bottom: 10px
+                            .card-text
+                                p
