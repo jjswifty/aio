@@ -9,6 +9,8 @@ document.addEventListener("DOMContentLoaded", function() {
             reset: true,
         },
         $allWorldTitle = document.querySelector('.robot-hand-title').children,
+        $aboutCompanyTitle = document.querySelector('.content_block').children,
+        $companyHotText = document.querySelector('#about_text').children,
         $applicationStartTitle = document.querySelector('.apps_applications').children,
         $aboutChatUsersTitle = document.querySelector('.apps_users').children,
         $activeAgents = document.querySelector('.promo-logo-table').children,
@@ -20,7 +22,7 @@ document.addEventListener("DOMContentLoaded", function() {
         origin: 'right',
         interval: 1000,
         distance: '200px',
-        reset: false
+        reset: false,
     })
 
     ScrollReveal().reveal($robotTitle, {
@@ -33,6 +35,20 @@ document.addEventListener("DOMContentLoaded", function() {
         ..._baseArguments,
         origin: 'right',
         interval: 500,
+    })
+
+    ScrollReveal().reveal($aboutCompanyTitle, {
+        ..._baseArguments,
+        origin: 'left',
+        interval: 500, 
+        distance: '200px'
+    })
+
+    ScrollReveal().reveal($companyHotText, {
+        ..._baseArguments,
+        origin: 'right',
+        interval: 500,
+        distance: '100px'
     })
 
     ScrollReveal().reveal($applicationStartTitle, {
@@ -49,6 +65,7 @@ document.addEventListener("DOMContentLoaded", function() {
     ScrollReveal().reveal($activeAgents, {
         ..._baseArguments,
         origin: 'left',
+        reset: false,
     })
 
     ScrollReveal().reveal($downloadInfo, {
@@ -60,8 +77,4 @@ document.addEventListener("DOMContentLoaded", function() {
         ..._baseArguments,
         origin: 'bottom',
     })
-
-
-
-    
 });

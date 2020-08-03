@@ -1,4 +1,9 @@
 /* ERIC MEYER TY FOR THIS STYLES <3 */
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -170,9 +175,17 @@ header .wrapper #nav-container .toggle-icon img {
   height: 50x;
 }
 
+html {
+  scroll-behavior: smooth !important;
+}
+
 body {
   background-color: #190E30;
-  scroll-behavior: smooth;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
 }
 
 button {
@@ -599,7 +612,6 @@ button:hover {
 .section-about-apps {
   background-color: #190e30;
   font-family: 'Montserrat', sans-serif;
-  padding: 50px 0;
 }
 
 .section-about-apps .wrapper {
@@ -984,17 +996,37 @@ footer .wrapper .footer-cards .card {
   }
 }
 
-footer .wrapper .footer-cards .card img {
+footer .wrapper .footer-cards .card a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none;
+}
+
+footer .wrapper .footer-cards .card a img {
   width: 150px;
 }
 
 @media screen and (max-width: 1000px) {
-  footer .wrapper .footer-cards .card img {
-    width: 100px;
+  footer .wrapper .footer-cards .card a img {
+    width: 300px;
   }
 }
 
-footer .wrapper .footer-cards .card span {
+@media screen and (max-width: 500px) {
+  footer .wrapper .footer-cards .card a img {
+    width: 200px;
+  }
+}
+
+footer .wrapper .footer-cards .card a span {
   font-size: 32px;
   font-family: 'Russo One', sans-serif;
   font-weight: bold;
@@ -1286,6 +1318,7 @@ footer .container {
 }
 
 .section-apps-promo .wrapper {
+  padding-top: 200px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1361,7 +1394,12 @@ footer .container {
   margin: 0 5%;
 }
 
-.section-apps-promo .wrapper .promo-available button {
+.section-apps-promo .wrapper .promo-available .button-redirec {
+  text-decoration: none;
+  width: 100%;
+}
+
+.section-apps-promo .wrapper .promo-available .button-redirec button {
   display: block;
   margin: 5% auto;
   width: 50%;
@@ -1378,14 +1416,14 @@ footer .container {
 }
 
 @media screen and (max-width: 1360px) {
-  .section-apps-promo .wrapper .promo-available button {
+  .section-apps-promo .wrapper .promo-available .button-redirec button {
     padding: 0 20px;
     width: 55%;
   }
 }
 
 @media screen and (max-width: 1000px) {
-  .section-apps-promo .wrapper .promo-available button {
+  .section-apps-promo .wrapper .promo-available .button-redirec button {
     font-size: 40px;
     height: 80px;
     width: 25%;
@@ -1393,7 +1431,7 @@ footer .container {
 }
 
 @media screen and (max-width: 800px) {
-  .section-apps-promo .wrapper .promo-available button {
+  .section-apps-promo .wrapper .promo-available .button-redirec button {
     font-size: 35px;
     height: 80px;
     width: 30%;
@@ -1401,7 +1439,7 @@ footer .container {
 }
 
 @media screen and (max-width: 600px) {
-  .section-apps-promo .wrapper .promo-available button {
+  .section-apps-promo .wrapper .promo-available .button-redirec button {
     font-size: 35px;
     height: 80px;
     width: 40%;
@@ -1409,12 +1447,12 @@ footer .container {
 }
 
 @media screen and (max-width: 450px) {
-  .section-apps-promo .wrapper .promo-available button {
+  .section-apps-promo .wrapper .promo-available .button-redirec button {
     width: 60%;
   }
 }
 
-.section-apps-promo .wrapper .promo-available button:hover {
+.section-apps-promo .wrapper .promo-available .button-redirec button:hover {
   -webkit-transform: scale(1.05);
           transform: scale(1.05);
 }
