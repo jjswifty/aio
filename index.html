@@ -8,24 +8,28 @@
     <link rel="stylesheet" href="./css/index.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400&display=swap" rel="stylesheet"> <!--Montseratt, 200, 300, 400-->
     <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script> <!--Scroll reveal-->
+    
+    
 
 </head>
-<body>
+<body class="scroll">
     <header>
         <div class="wrapper">
             <ul class="nav-desk">
-                <li><a href="">Главная</a></li>
-                <li><a href="">Партнёрство</a></li>
-                <li><a href="">Клуб</a></li>
-                <li><a href="">Новости</a></li>
-                <li><a href="">Контакты</a></li>
+                <li><a href="#">Главная</a></li>
+                <li><a href="./pages/questions.html">FAQ</a></li>
+                <li><a href="./pages/vacansy.html">Вакансии</a></li>
+                <li><a href="./pages/timetable.html">Расписание</a></li>
+                <li><a href="./pages/news.html">Новости</a></li>
+                <li><a href="./pages/project.html">Проекты</a></li>
             </ul>
             <ul class="nav-mob">
-                <li><a href="">Главная</a></li>
-                <li><a href="">Партнёрство</a></li>
-                <li><a href="">Клуб</a></li>
-                <li><a href="">Новости</a></li>
-                <li><a href="">Контакты</a></li>
+                <li><a href="#">Главная</a></li>
+                <li><a href="./pages/questions.html">FAQ</a></li>
+                <li><a href="./pages/vacansy.html">Вакансии</a></li>
+                <li><a href="./pages/timetable.html">Расписание</a></li>
+                <li><a href="./pages/news.html">Новости</a></li>
+                <li><a href="./pages/project.html">Проекты</a></li>
             </ul>
             <div id="nav-container">
                 <div class="toggle-icon">
@@ -46,7 +50,7 @@
                             <span class="intro-title">ОТДЫХАЙ</span>
                         </div>
                         <div class="button-block">
-                            <button class="intro-button gradient">Подробнее</button>                            
+                            <button class="intro-button gradient" id="more">Подробнее</button>                            
                             <img src="./img/arrows.png" alt="" class="arrow">                            
                         </div>
                     </div>
@@ -73,14 +77,13 @@
         </section>        
         <section class="section-about gradient"><!--Текст о корпорации. Маленькая секция-->            
                 <div class="black-div">                   
-                    <div class="about_text">Корпорация, в которой создаются новые идеи и решения, улучшающие качество жизни людей по всему миру</div>
+                    <div class="about_text" id="about_text"><span>Корпорация, в которой создаются новые идеи и решения, улучшающие качество жизни людей по всему миру</span></div>
                 </div>            
         </section>
         <section class="section-robot"><!-- Секция с рукой (от выйди за пределы до конца картинки руки) -->
             <div class="wrapper">
                 <div class="robot-title">
                     <span class="robot-title-1">Выйди за пределы<br><span class="robot-special">возможного<span></span>
-                    
                 </div>
                 <div class="robot-hand">
                     <div class="robot-hand-title">
@@ -123,7 +126,7 @@
                 <div class="promo-available">
                     <img src="./img/google play.png" alt="">
                     <img src="./img/app store.png" alt="">
-                    <button>Скачать</button>
+                    <a href="https://mic-on.kz/" target="_blank" class="button-redirec"><button>Скачать</button></a>
                 </div>
             </div>
         </section>
@@ -132,28 +135,39 @@
         <div class="wrapper">
             <div class="footer-cards">
                 <div class="card">
-                    <img src="./img/microphon.png" alt="" class="icon-footer">
-                    <span class="card-title_footer">Microphone</span>
+                    <a href="https://mic-on.kz/" target="_blank">
+                        <img src="./img/microphon.png" alt="" class="icon-footer">
+                        <span class="card-title_footer">Microphone</span>
+                    </a>
                 </div>
                 <div class="card">
-                    <img src="./img/svistok.png" alt="" class="icon-footer">
-                    <span class="card-title_footer">SVISTOK</span>
+                    <a href="https://mic-on.kz/">
+                        <img src="./img/svistok.png" alt="" class="icon-footer">
+                        <span class="card-title_footer">SVISTOK</span>
+                    </a>
                 </div>
                 <div class="card">
-                    <img src="./img/health.png" alt="" class="icon-footer">
-                    <span class="card-title_footer">Health</span>
+                    <a href="https://mic-on.kz/medapp/" target="_blank">
+                        <img src="./img/health.png" alt="" class="icon-footer">
+                        <span class="card-title_footer">MedApp</span>
+                    </a>
                 </div>
                 <div class="card">
-                    <img src="./img/toursport.png" alt="" class="icon-footer">
-                    <span class="card-title_footer">Tour & Sport</span>
+                    <a href="https://mic-on.kz/tours/">
+                        <img src="./img/toursport.png" alt="" class="icon-footer">
+                        <span class="card-title_footer">Tour & Sport</span>
+                    </a>
                 </div>
                 <div class="card">
-                    <img src="./img/work.png" alt="" class="icon-footer">
-                    <span class="card-title_footer">Super-Work</span>
+                    <a href="https://mic-on.kz/work/">
+                        <img src="./img/work.png" alt="" class="icon-footer">
+                        <span class="card-title_footer">Super-Work</span>
+                    </a>
                 </div>
             </div>
         </div>
     </footer>
+    <script src="./scripts/index.js"></script>
     <script src="./scripts/header.js"></script>
     <script src="./scripts/reveal.js"></script>
 </body>
