@@ -179,17 +179,22 @@ body {
   background-color: #190E30;
 }
 
+.gradient {
+  background: -webkit-gradient(linear, left top, right top, color-stop(10%, #2beaff), color-stop(60%, #ff12e3));
+  background: linear-gradient(90deg, #2beaff 10%, #ff12e3 60%);
+}
+
 .section-timetable {
   font-family: 'Montserrat', sans-serif;
   min-height: 100vh;
   background: url(../img/logotip.png);
-  background-size: 30%;
+  background-size: 15%;
   background-repeat: no-repeat;
   background-position: top center;
 }
 
 .section-timetable .wrapper .container {
-  padding-top: 130px;
+  padding-top: 200px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -207,7 +212,7 @@ body {
 .section-timetable .wrapper .container h2 {
   color: #ffffff;
   font-size: 40px;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   text-align: center;
 }
 
@@ -239,14 +244,18 @@ body {
   min-height: 320px;
   min-width: 250px;
   text-align: center;
-  background: -webkit-gradient(linear, left top, right top, color-stop(10%, #2beaff), color-stop(60%, #ff12e3));
-  background: linear-gradient(90deg, #2beaff 10%, #ff12e3 60%);
   margin: 10px 10px;
-  padding: 10px 10px;
   border-radius: 30px;
 }
 
-.section-timetable .wrapper .container .content .cards .card .card-content {
+.section-timetable .wrapper .container .content .cards .card .black {
+  background-color: rgba(0, 0, 0, 0.25);
+  height: 100%;
+  border-radius: 30px;
+  padding: 10px;
+}
+
+.section-timetable .wrapper .container .content .cards .card .black .card-content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -258,7 +267,7 @@ body {
   margin: 0 auto;
 }
 
-.section-timetable .wrapper .container .content .cards .card .card-content h3 {
+.section-timetable .wrapper .container .content .cards .card .black .card-content h3 {
   font-size: 25px;
   padding-bottom: 10px;
 }

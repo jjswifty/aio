@@ -182,10 +182,14 @@ body {
 .section-news {
   font-family: 'Montserrat', sans-serif;
   min-height: 100vh;
+  background: url(../img/logotip.png);
+  background-size: 15%;
+  background-repeat: no-repeat;
+  background-position: top;
 }
 
 .section-news .wrapper .container {
-  padding-top: 130px;
+  padding-top: 200px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -203,7 +207,7 @@ body {
 .section-news .wrapper .container h2 {
   color: #ffffff;
   font-size: 40px;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 
 .section-news .wrapper .container .content {

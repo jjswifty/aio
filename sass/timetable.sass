@@ -3,17 +3,19 @@
 
 body
     background-color: #190E30
+.gradient
+    background: linear-gradient(90deg, rgba(43,234,255,1) 10%, rgb(255, 18, 227) 60%)
 
 .section-timetable
     font-family: 'Montserrat', sans-serif
     min-height: 100vh
     background: url(../img/logotip.png)
-        size: 30%
+        size: 15%
         repeat: no-repeat
         position: top center
     .wrapper
         .container
-            padding-top: 130px
+            padding-top: 200px
             display: flex
             flex-direction: column
             align-items: center
@@ -22,7 +24,7 @@ body
             h2
                 color: #ffffff
                 font-size: 40px
-                margin-bottom: 50px
+                margin-bottom: 30px
                 text-align: center
                 @media screen and ( max-width: 900px )
                     font-size: 30px
@@ -40,19 +42,23 @@ body
                     .card
                         min-height: 320px
                         min-width: 250px
-
-                        text-align: center
-                        background: linear-gradient(90deg, rgba(43,234,255,1) 10%, rgb(255, 18, 227) 60%)
+                        text-align: center                        
                         margin: 10px 10px
-                        padding: 10px 10px
+                        
                         border-radius: 30px
-                        .card-content
-                            display: flex
-                            flex-direction: column
-                            max-width: 250px
-                            margin: 0 auto
-                            h3
-                                font-size: 25px
-                                padding-bottom: 10px
-                            .card-text
-                                p
+                        .black
+                            background-color: rgba(0, 0, 0, 0.25)
+                            height: 100%
+                            border-radius: 30px
+                            padding: 10px
+                            
+                            .card-content
+                                display: flex
+                                flex-direction: column
+                                max-width: 250px
+                                margin: 0 auto
+                                h3
+                                    font-size: 25px
+                                    padding-bottom: 10px
+                                .card-text
+                                    p

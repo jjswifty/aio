@@ -188,13 +188,13 @@ body {
   font-family: 'Montserrat', sans-serif;
   min-height: 100vh;
   background: url(../img/logotip.png);
-  background-size: 30%;
+  background-size: 15%;
   background-repeat: no-repeat;
-  background-position: top center;
+  background-position: top;
 }
 
 .section-vacansy .wrapper .container {
-  padding-top: 150px;
+  padding-top: 200px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
