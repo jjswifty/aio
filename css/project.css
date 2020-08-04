@@ -182,6 +182,10 @@ body {
 .section-project {
   font-family: 'Montserrat', sans-serif;
   min-height: 100vh;
+  background: url(../img/logotip.png);
+  background-size: 30%;
+  background-repeat: no-repeat;
+  background-position: top center;
 }
 
 .section-project .wrapper .container {
@@ -189,11 +193,198 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   margin: 0 auto;
+  text-align: center;
 }
 
 .section-project .wrapper .container h2 {
   font-size: 40px;
   color: #ffffff;
+  margin-bottom: 30px;
+}
+
+.section-project .wrapper .container .content .cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 60%;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 1000px) {
+  .section-project .wrapper .container .content .cards {
+    width: 40%;
+  }
+}
+
+.section-project .wrapper .container .content .cards .card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 20px 0;
+  background-color: rgba(255, 255, 255, 0.85);
+  padding: 20px;
+  border-radius: 30px;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+@media screen and (max-width: 600px) {
+  .section-project .wrapper .container .content .cards .card {
+    padding: 0;
+  }
+}
+
+.section-project .wrapper .container .content .cards .card a {
+  text-decoration: none;
+  color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media screen and (max-width: 1000px) {
+  .section-project .wrapper .container .content .cards .card a {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .section-project .wrapper .container .content .cards .card a .card-img {
+    height: 120px;
+    width: 120px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .section-project .wrapper .container .content .cards .card a .card-img {
+    height: 90px;
+    width: 90px;
+  }
+}
+
+.section-project .wrapper .container .content .cards .card a .card-img img {
+  height: 200px;
+  width: 200px;
+}
+
+@media screen and (max-width: 700px) {
+  .section-project .wrapper .container .content .cards .card a .card-img img {
+    height: 120px;
+    width: 120px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .section-project .wrapper .container .content .cards .card a .card-img img {
+    height: 90px;
+    width: 90px;
+  }
+}
+
+.section-project .wrapper .container .content .cards .card a .card-content {
+  border-radius: 30px;
+  padding: 20px 10px;
+}
+
+@media screen and (max-width: 1200px) {
+  .section-project .wrapper .container .content .cards .card a .card-content {
+    padding: 10px 10px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .section-project .wrapper .container .content .cards .card a .card-content {
+    padding: 10px 0;
+  }
+}
+
+.section-project .wrapper .container .content .cards .card a .card-content .card-title {
+  text-align: left;
+  font-size: 30px;
+  font-weight: bold;
+  padding-bottom: 15px;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 1200px) {
+  .section-project .wrapper .container .content .cards .card a .card-content .card-title {
+    font-size: 26px;
+    font-weight: bold;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .section-project .wrapper .container .content .cards .card a .card-content .card-title {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .section-project .wrapper .container .content .cards .card a .card-content .card-title {
+    font-size: 23px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .section-project .wrapper .container .content .cards .card a .card-content .card-title {
+    font-size: 20px;
+  }
+}
+
+.section-project .wrapper .container .content .cards .card a .card-content .card-text {
+  font-size: 20px;
+  text-align: left;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 1200px) {
+  .section-project .wrapper .container .content .cards .card a .card-content .card-text {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .section-project .wrapper .container .content .cards .card a .card-content .card-text {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .section-project .wrapper .container .content .cards .card a .card-content .card-text {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .section-project .wrapper .container .content .cards .card a .card-content .card-text {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 410px) {
+  .section-project .wrapper .container .content .cards .card a .card-content .card-text {
+    font-size: 12px;
+  }
+}
+
+.section-project .wrapper .container .content .cards .card:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  border: 10px solid green;
 }
 /*# sourceMappingURL=project.css.map */

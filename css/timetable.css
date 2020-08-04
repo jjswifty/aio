@@ -182,6 +182,10 @@ body {
 .section-timetable {
   font-family: 'Montserrat', sans-serif;
   min-height: 100vh;
+  background: url(../img/logotip.png);
+  background-size: 30%;
+  background-repeat: no-repeat;
+  background-position: top center;
 }
 
 .section-timetable .wrapper .container {

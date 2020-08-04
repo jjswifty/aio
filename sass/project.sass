@@ -7,11 +7,108 @@ body
 .section-project
     font-family: 'Montserrat', sans-serif
     min-height: 100vh
+    background: url(../img/logotip.png)
+        size: 30%
+        repeat: no-repeat
+        position: top center
     .wrapper
         .container
             padding-top: 130px
             display: flex
+            flex-direction: column
             margin: 0 auto
+            text-align: center
             h2 
                 font-size: 40px
                 color: #ffffff
+                margin-bottom: 30px
+            .content
+                .cards
+                    display: flex
+                    flex-direction: column
+                    width: 60%
+                    margin: 0 auto
+                    @media screen and ( max-width: 1000px )
+                        width: 40%
+                    
+                    
+                    
+                    .card
+                        display: flex
+                        margin: 20px 0
+                        background-color: rgba(255, 255, 255, 0.85)
+                        padding: 20px
+                        border-radius: 30px
+                        transition: all .3s
+                        @media screen and ( max-width: 600px )
+                            padding: 0
+                                                      
+                        a
+                            text-decoration: none
+                            color: black
+                            display: flex
+                            align-items: center
+                            @media screen and ( max-width: 1000px )
+                                flex-direction: column                          
+                            .card-img
+                                
+                                @media screen and ( max-width: 700px )
+                                    height: 120px
+                                    width: 120px
+                                @media screen and ( max-width: 500px )
+                                    height: 90px
+                                    width: 90px
+                                img
+                                    height: 200px
+                                    width: 200px
+                                    @media screen and ( max-width: 700px )
+                                        height: 120px
+                                        width: 120px
+                                    @media screen and ( max-width: 500px )
+                                        height: 90px
+                                        width: 90px
+
+                            .card-content                            
+                                border-radius: 30px
+                                padding: 20px 10px
+
+                                @media screen and ( max-width: 1200px )
+                                    padding: 10px 10px
+                                @media screen and ( max-width: 1000px )                            
+                                    padding: 10px 0
+
+                                .card-title
+                                    text-align: left 
+                                     
+                                    font-size: 30px
+                                    font-weight: bold
+                                    padding-bottom: 15px
+                                    margin: 0 auto
+                                    @media screen and ( max-width: 1200px )
+                                        font-size: 26px
+                                        font-weight: bold       
+                                    @media screen and ( max-width: 1000px )
+                                        text-align: center
+                                    @media screen and ( max-width: 700px )
+                                        font-size: 23px
+                                    @media screen and ( max-width: 500px )
+                                        font-size: 20px
+                                .card-text
+                                    font-size: 20px
+                                    text-align: left                                    
+                                    margin: 0 auto
+                                    @media screen and ( max-width: 1200px )
+                                        font-size: 18px
+                                    @media screen and ( max-width: 1000px )
+                                        text-align: center
+                                    @media screen and ( max-width: 700px )
+                                        font-size: 16px
+                                    @media screen and ( max-width: 500px )
+                                        font-size: 14px
+                                    @media screen and ( max-width: 410px )
+                                        font-size: 12px
+                                    
+                    .card:hover
+                        transform: scale(1.05)
+                        border: 10px solid green
+

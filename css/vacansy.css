@@ -179,9 +179,18 @@ body {
   background-color: #190E30;
 }
 
+.gradient {
+  background: -webkit-gradient(linear, left top, right top, color-stop(10%, #2beaff), color-stop(60%, #ff12e3));
+  background: linear-gradient(90deg, #2beaff 10%, #ff12e3 60%);
+}
+
 .section-vacansy {
   font-family: 'Montserrat', sans-serif;
   min-height: 100vh;
+  background: url(../img/logotip.png);
+  background-size: 30%;
+  background-repeat: no-repeat;
+  background-position: top center;
 }
 
 .section-vacansy .wrapper .container {
@@ -197,7 +206,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
   margin: 0 auto;
-  width: 60%;
+  max-width: 800px;
 }
 
 .section-vacansy .wrapper .container h2 {
@@ -210,8 +219,13 @@ body {
   border-radius: 40px;
 }
 
-.section-vacansy .wrapper .container .content .cards {
-  padding: 10px 10px;
+.section-vacansy .wrapper .container .content .black {
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 100%;
+  border-radius: 40px;
+}
+
+.section-vacansy .wrapper .container .content .black .cards {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -220,14 +234,41 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background: -webkit-gradient(linear, left top, right top, color-stop(10%, #2beaff), color-stop(60%, #ff12e3));
-  background: linear-gradient(90deg, #2beaff 10%, #ff12e3 60%);
-  border-radius: 40px;
+  vertical-align: center;
+  border-radius: 80px;
 }
 
-.section-vacansy .wrapper .container .content .cards .card {
+.section-vacansy .wrapper .container .content .black .cards .card {
   max-width: 300px;
-  min-height: 300px;
-  padding: 10px 10px;
+  max-height: 300px;
+  text-align: center;
+  font-size: 18px;
+  margin: 20px 15px;
+  padding: 15px 10px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 15px;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.section-vacansy .wrapper .container .content .black .cards .card:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+.section-vacansy .wrapper .container .content .black .cards .card:hover h2 {
+  color: white;
+}
+
+.section-vacansy .wrapper .container .content .black .cards .card:hover .card-text {
+  color: white;
+}
+
+.section-vacansy .wrapper .container .content .black .cards .card h2 {
+  font-size: 25px;
+  font-weight: bold;
+  color: black;
+  margin-bottom: 10px;
 }
 /*# sourceMappingURL=vacansy.css.map */
