@@ -7,37 +7,64 @@ body
 .section-news
     font-family: 'Montserrat', sans-serif
     min-height: 100vh
-    background: url(../img/logotip.png)
-        size: 15%
-        repeat: no-repeat
-        position: top
+    
     .wrapper
         .container
-            padding-top: 200px
+            padding-top: 300px
             display: flex
             flex-direction: column
             align-items: center
             margin: 0 auto
             width: 70%
+            @media screen and ( max-width: 600px )
+                width: 100%
             h2
                 color: #ffffff
                 font-size: 40px
-                margin-bottom: 30px              
+                margin-bottom: 30px   
             .content
                 display: flex
                 justify-content: center
                 margin: 0 auto
                 align-items: center
-                
+                position: relative
+                &::before
+                    content: ''
+                    width: 400px
+                    height: 400px
+                    background:
+                        image: url(../img/logotip.png)
+                        size: 100%
+                        repeat: no-repeat
+                    position: absolute
+                    top: -350px
+                    @media screen and ( max-width: 800px )
+                        width: 250px
+                        height: 250px
+                        top: -250px
                 .cards
                     display: flex
                     flex-direction: column                    
                     .card
                         color: #ffffff
-                        font-size: 20px
-                        line-height: 24px
+                        h3
+                            text-align: left
+                            font-size: 30px
+                            @media screen and ( max-width: 600px )
+                                font-size: 25px
+                            padding: 10px 0
+                        p
+                            font-size: 16px
+                            line-height: 24px
                         border-bottom: 3px solid transparent
                         border-image: linear-gradient(90deg, rgba(43,234,255,1) 10%, rgb(255, 18, 227) 60%)
                         border-image-slice: 1
                         padding: 20px 10px
-                        text-align: center
+                        text-align: left
+                        p
+                            @media screen and ( max-width: 600px )
+                                width: 100%
+                                font-size: 14px
+                                line-height: 15px
+                        
+                            

@@ -73,8 +73,8 @@ document.addEventListener("DOMContentLoaded", function() {
         origin: 'bottom',
     })
 
-    ScrollReveal().reveal($footerElements, {
+    /*ScrollReveal().reveal($footerElements, {
         ..._baseArguments,
         origin: 'bottom',
-    })
+    })*/
 });

@@ -4,6 +4,10 @@
           box-sizing: border-box;
 }
 
+#currentpage {
+  color: green;
+}
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -187,14 +191,10 @@ body {
 .section-vacansy {
   font-family: 'Montserrat', sans-serif;
   min-height: 100vh;
-  background: url(../img/logotip.png);
-  background-size: 15%;
-  background-repeat: no-repeat;
-  background-position: top;
 }
 
 .section-vacansy .wrapper .container {
-  padding-top: 200px;
+  padding-top: 300px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -209,6 +209,12 @@ body {
   max-width: 800px;
 }
 
+@media screen and (max-width: 800px) {
+  .section-vacansy .wrapper .container {
+    padding-top: 200px;
+  }
+}
+
 .section-vacansy .wrapper .container h2 {
   font-size: 40px;
   color: #ffffff;
@@ -217,6 +223,37 @@ body {
 
 .section-vacansy .wrapper .container .content {
   border-radius: 40px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.section-vacansy .wrapper .container .content::before {
+  content: '';
+  width: 400px;
+  height: 400px;
+  background-image: url(../img/logotip.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: -350px;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 800px) {
+  .section-vacansy .wrapper .container .content::before {
+    width: 250px;
+    height: 250px;
+    top: -250px;
+  }
 }
 
 .section-vacansy .wrapper .container .content .black {

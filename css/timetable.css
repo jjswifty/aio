@@ -4,6 +4,10 @@
           box-sizing: border-box;
 }
 
+#currentpage {
+  color: green;
+}
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -187,14 +191,10 @@ body {
 .section-timetable {
   font-family: 'Montserrat', sans-serif;
   min-height: 100vh;
-  background: url(../img/logotip.png);
-  background-size: 15%;
-  background-repeat: no-repeat;
-  background-position: top center;
 }
 
 .section-timetable .wrapper .container {
-  padding-top: 200px;
+  padding-top: 300px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -225,6 +225,36 @@ body {
 @media screen and (max-width: 600px) {
   .section-timetable .wrapper .container h2 {
     font-size: 24px;
+  }
+}
+
+.section-timetable .wrapper .container .content {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.section-timetable .wrapper .container .content::before {
+  content: '';
+  width: 400px;
+  height: 400px;
+  background-image: url(../img/logotip.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: -350px;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 800px) {
+  .section-timetable .wrapper .container .content::before {
+    width: 250px;
+    height: 250px;
+    top: -250px;
   }
 }
 

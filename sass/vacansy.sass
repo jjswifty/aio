@@ -9,14 +9,11 @@ body
 .section-vacansy
     font-family: 'Montserrat', sans-serif
     min-height: 100vh
-    background: url(../img/logotip.png)
-        size: 15%
-        repeat: no-repeat
-        position: top
-
     .wrapper
         .container
-            padding-top: 200px
+            padding-top: 300px
+            @media screen and ( max-width: 800px )
+                padding-top: 200px
             display: flex
             flex-direction: column
             align-items: center
@@ -28,6 +25,26 @@ body
                 margin-bottom: 50px
             .content
                 border-radius: 40px
+                position: relative
+                display: flex
+                justify-content: center
+                margin: 0 auto
+                align-items: center
+                &::before
+                    content: ''
+                    width: 400px
+                    height: 400px
+                    background:
+                        image: url(../img/logotip.png)
+                        size: 100%
+                        repeat: no-repeat
+                    position: absolute
+                    top: -350px
+                    margin: 0 auto
+                    @media screen and ( max-width: 800px )
+                        width: 250px
+                        height: 250px
+                        top: -250px
                 .black
                     background-color: rgba( 0, 0, 0, 0.5)
                     height: 100%
@@ -37,8 +54,6 @@ body
                         flex-wrap: wrap
                         justify-content: center
                         vertical-align: center
-                        //background: linear-gradient(90deg, rgba(43,234,255,1) 10%, rgb(255, 18, 227) 60%)
-                        //background-color: rgba( 0, 0, 0, 0.4)
                         border-radius: 80px
                         .card
                             max-width: 300px

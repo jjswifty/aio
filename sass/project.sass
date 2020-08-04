@@ -7,13 +7,9 @@ body
 .section-project
     font-family: 'Montserrat', sans-serif
     min-height: 100vh
-    background: url(../img/logotip.png)
-        size: 15%
-        repeat: no-repeat
-        position: top
     .wrapper
         .container
-            padding-top: 200px
+            padding-top: 300px
             display: flex
             flex-direction: column
             margin: 0 auto
@@ -23,16 +19,33 @@ body
                 color: #ffffff
                 margin-bottom: 30px
             .content
+                position: relative
+                display: flex
+                justify-content: center
+                margin: 0 auto
+                align-items: center
+                &::before
+                    content: ''
+                    width: 400px
+                    height: 400px
+                    background:
+                        image: url(../img/logotip.png)
+                        size: 100%
+                        repeat: no-repeat
+                    position: absolute
+                    top: -350px
+                    margin: 0 auto
+                    @media screen and ( max-width: 800px )
+                        width: 250px
+                        height: 250px
+                        top: -300px
                 .cards
                     display: flex
                     flex-direction: column
                     width: 60%
                     margin: 0 auto
                     @media screen and ( max-width: 1000px )
-                        width: 40%
-                    
-                    
-                    
+                        width: 100%
                     .card
                         display: flex
                         margin: 20px 0
@@ -40,9 +53,9 @@ body
                         padding: 20px
                         border-radius: 30px
                         transition: all .3s
+                        width: 100%
                         @media screen and ( max-width: 600px )
-                            padding: 0
-                                                      
+                            padding: 10px                         
                         a
                             text-decoration: none
                             color: black
@@ -50,8 +63,7 @@ body
                             align-items: center
                             @media screen and ( max-width: 1000px )
                                 flex-direction: column                          
-                            .card-img
-                                
+                            .card-img   
                                 @media screen and ( max-width: 700px )
                                     height: 120px
                                     width: 120px
@@ -67,16 +79,13 @@ body
                                     @media screen and ( max-width: 500px )
                                         height: 90px
                                         width: 90px
-
                             .card-content                            
                                 border-radius: 30px
                                 padding: 20px 10px
-
                                 @media screen and ( max-width: 1200px )
                                     padding: 10px 10px
                                 @media screen and ( max-width: 1000px )                            
                                     padding: 10px 0
-
                                 .card-title
                                     text-align: left 
                                      
@@ -106,9 +115,8 @@ body
                                     @media screen and ( max-width: 500px )
                                         font-size: 14px
                                     @media screen and ( max-width: 410px )
-                                        font-size: 12px
+                                        font-size: 14px
                                     
-                    .card:hover
-                        transform: scale(1.05)
-                        border: 10px solid green
+                    
+                        
 

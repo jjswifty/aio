@@ -4,6 +4,10 @@
           box-sizing: border-box;
 }
 
+#currentpage {
+  color: green;
+}
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -182,14 +186,10 @@ body {
 .section-news {
   font-family: 'Montserrat', sans-serif;
   min-height: 100vh;
-  background: url(../img/logotip.png);
-  background-size: 15%;
-  background-repeat: no-repeat;
-  background-position: top;
 }
 
 .section-news .wrapper .container {
-  padding-top: 200px;
+  padding-top: 300px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -202,6 +202,12 @@ body {
           align-items: center;
   margin: 0 auto;
   width: 70%;
+}
+
+@media screen and (max-width: 600px) {
+  .section-news .wrapper .container {
+    width: 100%;
+  }
 }
 
 .section-news .wrapper .container h2 {
@@ -221,6 +227,26 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: relative;
+}
+
+.section-news .wrapper .container .content::before {
+  content: '';
+  width: 400px;
+  height: 400px;
+  background-image: url(../img/logotip.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: -350px;
+}
+
+@media screen and (max-width: 800px) {
+  .section-news .wrapper .container .content::before {
+    width: 250px;
+    height: 250px;
+    top: -250px;
+  }
 }
 
 .section-news .wrapper .container .content .cards {
@@ -235,14 +261,37 @@ body {
 
 .section-news .wrapper .container .content .cards .card {
   color: #ffffff;
-  font-size: 20px;
-  line-height: 24px;
   border-bottom: 3px solid transparent;
   -o-border-image: linear-gradient(90deg, #2beaff 10%, #ff12e3 60%);
      border-image: -webkit-gradient(linear, left top, right top, color-stop(10%, #2beaff), color-stop(60%, #ff12e3));
      border-image: linear-gradient(90deg, #2beaff 10%, #ff12e3 60%);
   border-image-slice: 1;
   padding: 20px 10px;
-  text-align: center;
+  text-align: left;
+}
+
+.section-news .wrapper .container .content .cards .card h3 {
+  text-align: left;
+  font-size: 30px;
+  padding: 10px 0;
+}
+
+@media screen and (max-width: 600px) {
+  .section-news .wrapper .container .content .cards .card h3 {
+    font-size: 25px;
+  }
+}
+
+.section-news .wrapper .container .content .cards .card p {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+@media screen and (max-width: 600px) {
+  .section-news .wrapper .container .content .cards .card p {
+    width: 100%;
+    font-size: 14px;
+    line-height: 15px;
+  }
 }
 /*# sourceMappingURL=news.css.map */

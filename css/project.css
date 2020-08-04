@@ -4,6 +4,10 @@
           box-sizing: border-box;
 }
 
+#currentpage {
+  color: green;
+}
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -182,14 +186,10 @@ body {
 .section-project {
   font-family: 'Montserrat', sans-serif;
   min-height: 100vh;
-  background: url(../img/logotip.png);
-  background-size: 15%;
-  background-repeat: no-repeat;
-  background-position: top;
 }
 
 .section-project .wrapper .container {
-  padding-top: 200px;
+  padding-top: 300px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -207,6 +207,40 @@ body {
   margin-bottom: 30px;
 }
 
+.section-project .wrapper .container .content {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.section-project .wrapper .container .content::before {
+  content: '';
+  width: 400px;
+  height: 400px;
+  background-image: url(../img/logotip.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: -350px;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 800px) {
+  .section-project .wrapper .container .content::before {
+    width: 250px;
+    height: 250px;
+    top: -300px;
+  }
+}
+
 .section-project .wrapper .container .content .cards {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -221,7 +255,7 @@ body {
 
 @media screen and (max-width: 1000px) {
   .section-project .wrapper .container .content .cards {
-    width: 40%;
+    width: 100%;
   }
 }
 
@@ -235,11 +269,12 @@ body {
   border-radius: 30px;
   -webkit-transition: all .3s;
   transition: all .3s;
+  width: 100%;
 }
 
 @media screen and (max-width: 600px) {
   .section-project .wrapper .container .content .cards .card {
-    padding: 0;
+    padding: 10px;
   }
 }
 
@@ -378,13 +413,7 @@ body {
 
 @media screen and (max-width: 410px) {
   .section-project .wrapper .container .content .cards .card a .card-content .card-text {
-    font-size: 12px;
+    font-size: 14px;
   }
-}
-
-.section-project .wrapper .container .content .cards .card:hover {
-  -webkit-transform: scale(1.05);
-          transform: scale(1.05);
-  border: 10px solid green;
 }
 /*# sourceMappingURL=project.css.map */
