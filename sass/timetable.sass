@@ -142,6 +142,161 @@ body
                 //             width: 60px
                 //         @media screen and ( max-width: 500px )
                 //             width: 50px
+.video-svg_block
+    height: 120px
+    width: 100%
+    .black-div
+        height: 120px
+        background-color: rgba( 0, 0, 0, 0.4)        
+        display: flex
+        justify-content: center
+        .svg-video
+            height: 120px
+.section-video
+    background: url(../img/fon-description.png) 
+        size: cover
+        position: center
+        repeat: no-repeat
+    width: 100%
+    max-height: 1080px
+
+    .wrapper          
+        .video_block
+            width: 100%
+            height: 100%
+            display: flex
+            flex-direction: column   
+            color: white
+            font-size: 80px
+            font-family: sans-serif
+            align-items: center
+            
+                                                       
+            .video
+                                    
+                iframe
+                    margin: 50px 0   
+                    @media screen and ( max-width: 1360px  )
+                        max-width: 896px
+                        max-height: 504px
+                    @media screen and ( max-width: 1000px  )
+                        max-width: 640px
+                        max-height: 360px 
+                    @media screen and ( max-width: 700px  )
+                        max-width: 448px
+                        max-height: 252px 
+                    @media screen and ( max-width: 500px  )
+                        max-width: 294px
+                        max-height: 165px 
+            .content_block
+                display: flex
+                flex-direction: column
+                align-items: center
+                margin-bottom: 30px
+                font-family: 'Russo One', sans-serif             
+                // .video_svg-content
+                //     height: 80px
+                //     margin-bottom: 30px
+                //     @media screen and ( max-width: 600px  )
+                //         margin-bottom: 10px
+                                            
+                .video_title-content                    
+                    font: 
+                        size: 30px
+                        weight: 600
+                    padding-bottom: 10px
+                .video_description-content
+                    max-width: 700px
+                    text-align: center
+                    color: #ffffff
+                    font: 
+                        size: 26px
+                    @media screen and ( max-width: 700px )
+                        max-width: 600px
+                        font-size: 22px
+.section-apps-promo
+    background: url(../img/woman.png),#190E30
+        position: bottom right, center
+        size: 55%, cover
+        repeat: no-repeat
+    height: 100%
+    .wrapper
+        padding-top: 200px
+        display: flex
+        flex-direction: column
+        .promo-logo-table
+            width: 40%
+            height: 25%
+            padding:
+                left: 200px
+                top: 200px
+            @media screen and ( max-width: 1360px )
+                padding: 
+                    left: 80px
+                    top: 200px
+            @media screen and ( max-width: 1000px )
+                padding: 0
+                width: 100%
+            img
+                width: 100%
+                height: 100%
+                @media screen and ( max-width: 1000px )
+                    width: 70%
+                    display: block
+                    margin: 0 auto
+        .promo-available
+            height: 20%
+            width: 50%
+            margin-top: 500px
+            display: flex
+            flex-wrap: wrap
+            padding-left: 150px
+            @media screen and ( max-width: 1360px )
+                margin-top: 300px
+            @media screen and ( max-width: 1000px )
+                padding: 0
+                width: 100%
+                margin-top: 100px
+            img
+                width: 40%
+                height: 100%
+                margin: 0 5%   
+            .button-redirec         
+                text-decoration: none
+                width: 100%   
+                button
+                    display: block
+                    margin: 5% auto
+                    width: 50%
+                    height: 7rem
+                    border-radius: 30px
+                    border: none
+                    outline: none
+                    font-size: 4rem
+                    color: white
+                    background: -webkit-linear-gradient(0deg, rgba(43,234,255,1) 35%, rgba(255,18,227,1) 100%)
+                    cursor: pointer
+                    transition: all .3s
+                    @media screen and ( max-width: 1360px )
+                        padding: 0 20px
+                        width: 55%
+                    @media screen and ( max-width: 1000px )
+                        font-size: 40px
+                        height: 80px
+                        width: 25%
+                    @media screen and ( max-width: 800px )
+                        font-size: 35px
+                        height: 80px
+                        width: 30%
+                    @media screen and ( max-width: 600px )
+                        font-size: 35px
+                        height: 80px
+                        width: 40%
+                    @media screen and ( max-width: 450px )
+                        width: 60%
+                    &:hover
+                        transform: scale(1.05)
+                    
 .section-timetable
     font-family: 'Montserrat', sans-serif
     min-height: 100vh
