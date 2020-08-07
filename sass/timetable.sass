@@ -5,6 +5,143 @@ body
     background-color: #190E30
 .gradient
     background: linear-gradient(90deg, rgba(43,234,255,1) 10%, rgb(255, 18, 227) 60%)
+
+.section-intro
+    background: url(../img/circle.png), url(../img/fon.png)
+        position: top right, center
+        size: 37%, cover
+        repeat: no-repeat
+    height: 100vh
+                
+    @media screen and ( max-width: 1360px )
+        background:
+            position: top right, center
+            size: 37%, cover
+    @media screen and ( max-width: 1000px )
+        background: url(../img/fon.png) 100%
+            position: 10% 50%
+            size: cover
+            repeat: no-repeat
+    @media screen and ( max-width: 900px )
+        background: 
+            position: 12% 50%
+            size: cover
+            
+    @media screen and ( max-width: 800px )
+        background: 
+            position: 20% 50%
+            size: cover
+            
+    @media screen and ( max-width: 700px )
+        background:
+            position: 27% 50%
+            size: cover
+            
+    @media screen and ( max-width: 500px )
+        background:
+            position: 30% 50%
+            size: cover
+            
+    .wrapper               
+        .intro
+            width: 100%
+            height: 100%
+            display: flex
+            align-items: center
+            justify-content: flex-end      
+            .description
+                display: flex
+                flex-direction: column                
+                align-items: flex-end
+                justify-content: center                
+                //@media screen and ( max-width: 1170px )                    
+                //@media screen and ( max-width: 900px )                    
+                //@media screen and ( max-width: 700px )
+                   
+                         
+                .title-content
+                    display: flex
+                    flex-direction: column
+                    font-family: 'Russo One', sans-serif
+                    
+                    
+                    .intro-title
+                        color: #ffffff
+                        font-size: 80px
+                        margin-bottom: 75px
+                        letter-spacing: inherit
+                        text-align: right
+                        font-weight: 800
+                        @media screen and ( max-width: 1360px )
+                            font-size: 60px
+                        @media screen and ( max-width: 1170px )                     
+                            margin-bottom: 50px
+                            font-size: 50px
+                        @media screen and ( max-width: 900px )
+                            
+                            font-size: 60px
+                        @media screen and ( max-width: 600px )
+                            font-size: 50px
+                        @media screen and ( max-width: 500px )
+                            font-size: 42px
+                        @media screen and ( max-width: 400px )
+                            font-size: 35px
+                    .text-gradient
+                        background: linear-gradient(90deg, rgba(43,234,255,1) 10%, rgba(255,18,227,1) 60%)
+                        -webkit-background-clip: text
+                        -webkit-text-fill-color: transparent
+                        @media screen and ( max-width: 900px )
+                            background: #ffffff
+                            -webkit-background-clip: text
+                            -webkit-text-fill-color: transparent
+
+                // .button-block
+                //     display: flex
+                //     flex-direction: column
+                //     //padding-bottom: 300px
+                //     .intro-button
+                //         color: #ffffff
+                //         font: 
+                //             size: 60px
+                //             weight: bold
+                //         border: none
+                //         outline: none
+                //         padding: 10px 0
+                //         width: 400px
+                //         border-radius: 20px
+                //         cursor: pointer
+                //         margin-bottom: 40px
+                //         @media screen and ( max-width: 1360px )
+                //             width: 320px
+                //             font: 
+                //                 size: 50px
+                //                 weight: 400
+
+                //         @media screen and ( max-width: 1170px )
+                //             width: 300px
+                //             font: 
+                //                 size: 40px
+                //                 weight: 400
+                //         //@media screen and ( max-width: 600px )
+                            
+                //         @media screen and ( max-width: 500px )
+                //             width: 240px
+                //             font: 
+                //                 size: 32px
+                //                 weight: 400
+                //         @media screen and ( max-width: 400px )
+                //             width: 200px
+                //             font: 
+                //                 size: 28px
+                //                 weight: 400
+
+                //     .arrow
+                //         width: 80px
+                //         margin: 0 auto
+                //         @media screen and ( max-width: 1360px )
+                //             width: 60px
+                //         @media screen and ( max-width: 500px )
+                //             width: 50px
 .section-timetable
     font-family: 'Montserrat', sans-serif
     min-height: 100vh
