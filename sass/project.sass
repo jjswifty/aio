@@ -1,6 +1,7 @@
 @import '_base.sass'
 @import '_header.sass'
-
+.gradient
+    background: linear-gradient(90deg, rgba(43,234,255,1) 10%, rgb(255, 18, 227) 60%)
 body
     background-color: #190E30
 
@@ -40,48 +41,61 @@ body
                         height: 250px
                         top: -300px
                 .cards
-                    display: flex
-                    flex-direction: column
-                    width: 60%
+                    display: flex                    
+                    width: 100%
                     margin: 0 auto
-                    @media screen and ( max-width: 1000px )
+                    @media screen and ( max-width: 1080px )
                         width: 100%
+                        flex-direction: column                  
+                        align-items: center
                     .card
-                        display: flex
+                        display: flex                        
                         margin: 20px 0
+                        align-items: center
                         background-color: rgba(255, 255, 255, 0.85)
-                        padding: 20px
+                        padding: 20px 10px
+                        margin: 20px
                         border-radius: 30px
                         transition: all .3s
-                        width: 100%
-                        @media screen and ( max-width: 600px )
-                            padding: 10px                         
+                        width: 100%                        
+                        // @media screen and ( max-width: 1730px )
+                        @media screen and ( max-width: 1080px )
+                            padding: 10px
+                            margin: 20px 0
+                        
+                            
                         a
                             text-decoration: none
                             color: black
                             display: flex
                             align-items: center
+                            flex-direction: column
                             @media screen and ( max-width: 1000px )
                                 flex-direction: column                          
-                            .card-img   
-                                @media screen and ( max-width: 700px )
-                                    height: 120px
-                                    width: 120px
-                                @media screen and ( max-width: 500px )
-                                    height: 90px
-                                    width: 90px
+                            .card-img
+                                // @media screen and ( max-width: 700px )
+                                //     height: 120px
+                                //     width: 120px
+                                // @media screen and ( max-width: 500px )
+                                //     height: 90px
+                                //     width: 90px
                                 img
                                     height: 200px
                                     width: 200px
-                                    @media screen and ( max-width: 700px )
-                                        height: 120px
-                                        width: 120px
-                                    @media screen and ( max-width: 500px )
-                                        height: 90px
-                                        width: 90px
+                                    @media screen and ( max-width: 1360px )
+                                        height: 150px
+                                        width: 150px
+                                    
+                                    // @media screen and ( max-width: 700px )
+                                    //     height: 120px
+                                    //     width: 120px
+                                    // @media screen and ( max-width: 500px )
+                                    //     height: 90px
+                                    //     width: 90px
                             .card-content                            
                                 border-radius: 30px
                                 padding: 20px 10px
+                                
                                 @media screen and ( max-width: 1200px )
                                     padding: 10px 10px
                                 @media screen and ( max-width: 1000px )                            
@@ -89,25 +103,26 @@ body
                                 .card-title
                                     text-align: left 
                                      
-                                    font-size: 30px
+                                    font-size: 24px
                                     font-weight: bold
                                     padding-bottom: 15px
-                                    margin: 0 auto
-                                    @media screen and ( max-width: 1200px )
-                                        font-size: 26px
+                                    margin: 0 auto                                    
+                                    @media screen and ( max-width: 1360px )
+                                        font-size: 18px
                                         font-weight: bold       
                                     @media screen and ( max-width: 1000px )
                                         text-align: center
                                     @media screen and ( max-width: 700px )
-                                        font-size: 23px
+                                        font-size: 21px
                                     @media screen and ( max-width: 500px )
                                         font-size: 20px
                                 .card-text
                                     font-size: 20px
                                     text-align: left                                    
                                     margin: 0 auto
-                                    @media screen and ( max-width: 1200px )
+                                    @media screen and ( max-width: 1730px )
                                         font-size: 18px
+                                    
                                     @media screen and ( max-width: 1000px )
                                         text-align: center
                                     @media screen and ( max-width: 700px )
@@ -116,6 +131,23 @@ body
                                         font-size: 14px
                                     @media screen and ( max-width: 410px )
                                         font-size: 14px
+                            .card-button
+                                margin-top: auto
+                                border-radius: 20px                                
+                                .button
+                                    background-color: rgba( 0, 0, 0, 0.4)
+                                    border: none
+                                    outline: none
+                                    font-size: 36px
+                                    border-radius: 20px
+                                    padding: 15px 20px
+                                    @media screen and ( max-width: 1730px )
+                                        font-size: 30px
+                                    @media screen and ( max-width: 1360px )
+                                        padding: 15px
+                                    @media screen and ( max-width: 1200px )
+                                        padding: 10px
+                                        font-size: 25px
                                     
                     
                         
