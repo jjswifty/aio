@@ -1,3 +1,4 @@
+/*
 document.addEventListener("DOMContentLoaded", function () {
     console.log('By jjswifty with love. github.com/jjswifty')
     document.querySelector('#more').onclick = (e) => {
@@ -8,3 +9,4 @@ document.addEventListener("DOMContentLoaded", function () {
         })
     }
 })
+*/

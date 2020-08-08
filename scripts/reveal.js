@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function() {
 
-    const $introTitle = document.querySelector('.title-content').children,
+    const //$introTitle = document.querySelector('.title-content').children,
         $robotTitle = [...document.querySelector('.robot-title').children, document.querySelector('.robot-special')]
         _baseArguments = {
             delay: 0,
@@ -13,10 +13,11 @@ document.addEventListener("DOMContentLoaded", function() {
         $companyHotText = document.querySelector('#about_text').children,
         $applicationStartTitle = document.querySelector('.apps_applications').children,
         $aboutChatUsersTitle = document.querySelector('.apps_users').children,
-        $activeAgents = document.querySelector('.promo-logo-table').children,
-        $downloadInfo = document.querySelector('.promo-available').children,
+        //$activeAgents = document.querySelector('.promo-logo-table').children,
+        //$downloadInfo = document.querySelector('.promo-available').children,
         $footerElements = document.querySelector('.footer-cards').children,
 
+    /*
     ScrollReveal().reveal($introTitle, {
         ..._baseArguments,
         origin: 'right',
@@ -24,7 +25,7 @@ document.addEventListener("DOMContentLoaded", function() {
         distance: '200px',
         reset: false,
     })
-
+    */
     ScrollReveal().reveal($robotTitle, {
         ..._baseArguments,
         origin: 'bottom',
@@ -62,16 +63,16 @@ document.addEventListener("DOMContentLoaded", function() {
         origin: 'right',
     })
 
-    ScrollReveal().reveal($activeAgents, {
-        ..._baseArguments,
-        origin: 'left',
-        reset: false,
-    })
+    //ScrollReveal().reveal($activeAgents, {
+    //    ..._baseArguments,
+    //    origin: 'left',
+    //    reset: false,
+    //})
 
-    ScrollReveal().reveal($downloadInfo, {
-        ..._baseArguments,
-        origin: 'bottom',
-    })
+    //ScrollReveal().reveal($downloadInfo, {
+    //    ..._baseArguments,
+    //    origin: 'bottom',
+    //})
 
     /*ScrollReveal().reveal($footerElements, {
         ..._baseArguments,

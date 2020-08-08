@@ -13,8 +13,8 @@ body
             padding-top: 300px
             display: flex
             flex-direction: column
-            margin: 0 auto
             text-align: center
+            width: 100%
             h2 
                 font-size: 40px
                 color: #ffffff
@@ -23,8 +23,9 @@ body
                 position: relative
                 display: flex
                 justify-content: center
-                margin: 0 auto
+
                 align-items: center
+                width: 100%
                 &::before
                     content: ''
                     width: 400px
@@ -43,55 +44,41 @@ body
                 .cards
                     display: flex                    
                     width: 100%
-                    margin: 0 auto
+                    flex-direction: column
+                    align-items: center
                     @media screen and ( max-width: 1080px )
                         width: 100%
                         flex-direction: column                  
                         align-items: center
                     .card
                         display: flex                        
-                        margin: 20px 0
                         align-items: center
                         background-color: rgba(255, 255, 255, 0.85)
                         padding: 20px 10px
                         margin: 20px
                         border-radius: 30px
                         transition: all .3s
-                        width: 100%                        
-                        // @media screen and ( max-width: 1730px )
+                        width: 50%                        
                         @media screen and ( max-width: 1080px )
                             padding: 10px
                             margin: 20px 0
-                        
-                            
                         a
+                            width: 100%
+                            display: flex
                             text-decoration: none
                             color: black
-                            display: flex
                             align-items: center
-                            flex-direction: column
+                       
                             @media screen and ( max-width: 1000px )
                                 flex-direction: column                          
                             .card-img
-                                // @media screen and ( max-width: 700px )
-                                //     height: 120px
-                                //     width: 120px
-                                // @media screen and ( max-width: 500px )
-                                //     height: 90px
-                                //     width: 90px
                                 img
                                     height: 200px
                                     width: 200px
                                     @media screen and ( max-width: 1360px )
                                         height: 150px
                                         width: 150px
-                                    
-                                    // @media screen and ( max-width: 700px )
-                                    //     height: 120px
-                                    //     width: 120px
-                                    // @media screen and ( max-width: 500px )
-                                    //     height: 90px
-                                    //     width: 90px
+
                             .card-content                            
                                 border-radius: 30px
                                 padding: 20px 10px
@@ -102,7 +89,6 @@ body
                                     padding: 10px 0
                                 .card-title
                                     text-align: left 
-                                     
                                     font-size: 24px
                                     font-weight: bold
                                     padding-bottom: 15px
@@ -141,6 +127,8 @@ body
                                     font-size: 36px
                                     border-radius: 20px
                                     padding: 15px 20px
+                                    color: white
+                                    cursor: pointer
                                     @media screen and ( max-width: 1730px )
                                         font-size: 30px
                                     @media screen and ( max-width: 1360px )

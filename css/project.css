@@ -202,8 +202,8 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin: 0 auto;
   text-align: center;
+  width: 100%;
 }
 
 .section-project .wrapper .container h2 {
@@ -220,10 +220,10 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin: 0 auto;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  width: 100%;
 }
 
 .section-project .wrapper .container .content::before {
@@ -251,7 +251,13 @@ body {
   display: -ms-flexbox;
   display: flex;
   width: 100%;
-  margin: 0 auto;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 @media screen and (max-width: 1080px) {
@@ -271,7 +277,6 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 20px 0;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -281,7 +286,7 @@ body {
   border-radius: 30px;
   -webkit-transition: all .3s;
   transition: all .3s;
-  width: 100%;
+  width: 50%;
 }
 
 @media screen and (max-width: 1080px) {
@@ -292,18 +297,15 @@ body {
 }
 
 .section-project .wrapper .container .content .cards .card a {
-  text-decoration: none;
-  color: black;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  text-decoration: none;
+  color: black;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
 }
 
 @media screen and (max-width: 1000px) {
@@ -425,6 +427,8 @@ body {
   font-size: 36px;
   border-radius: 20px;
   padding: 15px 20px;
+  color: white;
+  cursor: pointer;
 }
 
 @media screen and (max-width: 1730px) {

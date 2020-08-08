@@ -363,7 +363,7 @@ body {
 }
 
 .section-video {
-  background: url(../img/fon-description.png);
+  background: #190E30;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
