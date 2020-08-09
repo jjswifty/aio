@@ -296,6 +296,12 @@ body {
   }
 }
 
+@media screen and (max-width: 700px) {
+  .section-project .wrapper .container .content .cards .card {
+    width: 100%;
+  }
+}
+
 .section-project .wrapper .container .content .cards .card a {
   width: 100%;
   display: -webkit-box;
