@@ -6,7 +6,6 @@ document.querySelector('.toggle-icon').onclick = () => {
         document.querySelector('.open-menu').style.display = 'none';
     } else {
         document.querySelector('.nav-mob').style.display = 'none'
-
         document.querySelector('.close-menu').style.display = 'none'
         document.querySelector('.open-menu').style.display = 'block';
     }

@@ -276,9 +276,9 @@ body {
 }
 
 .section-vacansy .wrapper .container .content .black .cards .card {
-  max-width: 300px;
-  max-height: 300px;
-  text-align: center;
+  width: 100%;
+  max-height: 800px;
+  text-align: left;
   font-size: 18px;
   margin: 20px 15px;
   padding: 15px 10px;
@@ -286,23 +286,17 @@ body {
   border-radius: 15px;
   -webkit-transition: all .3s;
   transition: all .3s;
-}
-
-.section-vacansy .wrapper .container .content .black .cards .card:hover {
-  background-color: rgba(0, 0, 0, 0.8);
-  -webkit-transform: scale(1.05);
-          transform: scale(1.05);
-}
-
-.section-vacansy .wrapper .container .content .black .cards .card:hover h2 {
-  color: white;
-}
-
-.section-vacansy .wrapper .container .content .black .cards .card:hover .card-text {
-  color: white;
+  /*&:hover
+                                background-color: rgba(0, 0, 0, 0.8)
+                                transform: scale(1.05)
+                                h2
+                                    color: white
+                                .card-text
+                                    color: white */
 }
 
 .section-vacansy .wrapper .container .content .black .cards .card h2 {
+  text-align: center;
   font-size: 25px;
   font-weight: bold;
   color: black;
